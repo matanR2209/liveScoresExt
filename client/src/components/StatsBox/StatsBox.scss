@@ -1,0 +1,23 @@
+.stats-container {
+ border: 1px solid darkgray;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 1em;
+  display: flex;
+  background: rgb(235,241,246); /* Old browsers */
+  background: -moz-linear-gradient(-45deg,  rgba(235,241,246,1) 0%, rgba(171,211,238,1) 75%, rgba(137,195,235,1) 100%, rgba(213,235,251,1) 100%, rgba(137,195,235,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg,  rgba(235,241,246,1) 0%,rgba(171,211,238,1) 75%,rgba(137,195,235,1) 100%,rgba(213,235,251,1) 100%,rgba(137,195,235,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg,  rgba(235,241,246,1) 0%,rgba(171,211,238,1) 75%,rgba(137,195,235,1) 100%,rgba(213,235,251,1) 100%,rgba(137,195,235,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf1f6', endColorstr='#89c3eb',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  .team-logo {
+    margin-top: 6em;
+  }
+  .close {
+    cursor: pointer;
+    font-weight: bold;
+  }
+  th {
+    padding: .5em 2em;
+  }
+}

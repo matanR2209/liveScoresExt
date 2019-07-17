@@ -1,0 +1,16 @@
+.player-container{
+  background: -moz-linear-gradient(top,  rgba(125,185,232,0) 27%, rgba(30,87,153,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(125,185,232,0) 27%,rgba(30,87,153,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(125,185,232,0) 27%,rgba(30,87,153,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#1e5799',GradientType=0 ); /* IE6-9 */
+  flex: 0 0 15%;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  .player-image {
+    img {
+      height: 3em;
+      width: 3em;
+    }
+  }
+}
