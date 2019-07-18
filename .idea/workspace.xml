@@ -26,6 +26,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="3" />
+          <entry key="gitignore" value="1" />
           <entry key="html" value="3" />
           <entry key="js" value="79" />
           <entry key="json" value="9" />
@@ -41,7 +42,7 @@
           <entry key="Image" value="1" />
           <entry key="JSON" value="9" />
           <entry key="JavaScript" value="79" />
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="PLAIN_TEXT" value="2" />
           <entry key="SCSS" value="30" />
         </counts>
       </usages-collector>
@@ -95,8 +96,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="332">
+              <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
             </state>
           </provider>
         </entry>
@@ -219,9 +220,6 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/client/node_modules" />
-  </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
       <path value="$PROJECT_DIR$/client/package.json" />
@@ -280,16 +278,6 @@
               <item name="chrome-sport-ext" type="b2602c69:ProjectViewProjectNode" />
               <item name="chrome-sport-ext" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="chrome-sport-ext" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chrome-sport-ext" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chrome-sport-ext" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chrome-sport-ext" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -299,7 +287,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="LiveB&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/components/LiveScoresBox/LiveScoresBox.js&#10;man&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/public/manifest.json&#10;Pla&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/components/Player/Player.scss&#10;stat&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/components/StatsBox/StatsBox.js&#10;live&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/components/LiveScoresBox/LiveScoresBox.scss&#10;Frame&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/containers/Frame/Frame.js&#10;red&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/store/reducers/reducer.js&#10;Fra&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/containers/Frame/Frame.js&#10;s&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/components/SideButton/SideButton.js&#10;package&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/package.json&#10;fra&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/containers/Frame/Frame.js&#10;redux&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/redux.js&#10;Fr&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/containers/Frame/Frame.js&#10;side&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/components/SideButton/SideButton.js&#10;Line&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/components/TeamLineup/TeamLineup.js&#10;frame&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/containers/Frame/Frame.js&#10;reduc&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/store/reducers/reducer.js&#10;team&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/components/TeamLineup/TeamLineup.js&#10;fra,e&#9;null&#9;null&#10;app&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/assets/containers/App/App.js&#10;app.&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/assets/containers/App/App.js&#10;index&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/index.js&#10;App&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/assets/containers/App/App.js" />
+    <property name="SearchEverywhereHistoryKey" value="giti&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/.gitignore&#10;LiveB&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/components/LiveScoresBox/LiveScoresBox.js&#10;man&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/public/manifest.json&#10;Pla&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/components/Player/Player.scss&#10;stat&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/components/StatsBox/StatsBox.js&#10;live&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/components/LiveScoresBox/LiveScoresBox.scss&#10;Frame&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/containers/Frame/Frame.js&#10;red&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/store/reducers/reducer.js&#10;Fra&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/containers/Frame/Frame.js&#10;s&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/components/SideButton/SideButton.js&#10;package&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/package.json&#10;fra&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/containers/Frame/Frame.js&#10;redux&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/redux.js&#10;Fr&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/containers/Frame/Frame.js&#10;side&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/components/SideButton/SideButton.js&#10;Line&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/components/TeamLineup/TeamLineup.js&#10;frame&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/containers/Frame/Frame.js&#10;reduc&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/store/reducers/reducer.js&#10;team&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/components/TeamLineup/TeamLineup.js&#10;fra,e&#9;null&#9;null&#10;app&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/assets/containers/App/App.js&#10;app.&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/assets/containers/App/App.js&#10;index&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/index.js&#10;App&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/assets/containers/App/App.js" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
@@ -365,17 +353,17 @@
       <workItem from="1562574356035" duration="1824000" />
       <workItem from="1562790028699" duration="1112000" />
       <workItem from="1563353917993" duration="5195000" />
-      <workItem from="1563372440306" duration="1319000" />
+      <workItem from="1563372440306" duration="3312000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99061000" />
+    <option name="totallyTimeSpent" value="101054000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="820" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15785764" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15785764" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -389,7 +377,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.23214285" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.23214285" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -607,10 +595,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="332">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
         </state>
       </provider>
     </entry>
