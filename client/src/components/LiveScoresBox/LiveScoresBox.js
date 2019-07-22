@@ -1,40 +1,33 @@
-import React from 'react';
+import React, { Fragment } from 'react'
 import './LiveScoresBox.scss';
 import connect from 'react-redux/es/connect/connect'
-import { FaExclamation } from 'react-icons/fa';
 
 const axios = require('axios');
 
 const LiveScoreBox = (props) => {
-  const liveGames = props.state.liveGames.map((league, leagueIndex) => {
-
-    const leagueGames = league.games.map((game, gameIndex) => {
-      return <tr className="game-container" key={gameIndex + leagueIndex}>
-        <td>{game.homeTeam}</td>
-        <td>{game.homeTeamScore}</td>
-        <td>{game.m}</td>
-        <td>{game.awayTeamScore}</td>
-        <td>{game.awayTeam}</td>
-        <td className="game-info"  onClick={() => props.getGameInfoHandler(game.gameId)}><FaExclamation/></td>
-      </tr>
-    });
-
-    return (
-      <div key={leagueIndex} className="league-container">
-        <div className="league-header">{league.leagueName}</div>
-        <div className="league-games-container"><table><tbody>{leagueGames}</tbody></table></div>
-      </div>
-    );
+  const setLiveGamesByLeague = props.state.liveGames.map((league, leagueIndex) => {
+      let games = league.matches.map((match, matchIndex) => {
+        return <tr key={matchIndex+leagueIndex} className="match-row">
+          <td className="teamName">{match.homeTeam.name}</td>
+          <td>{match.matchData.scores.localteam_score}</td>
+          <td> - </td>
+          <td>{match.matchData.scores.visitorteam_score}</td>
+          <td className="teamName">{match.awayTeam.name}</td>
+          <td className="info">i</td>
+        </tr>
+      })
+    return <Fragment key={leagueIndex}><tr className="league-name"><td colSpan={6}>{league.leagueName}</td></tr>{games}</Fragment>
   });
-
-
+  const liveGames = setLiveGamesByLeague;
   return (
     <div className="live-games-container">
-        {liveGames}
+      <table><tbody>{liveGames}</tbody></table>
       <div className="close" onClick={() => props.updateLiveGamesHandler()} >X</div>
     </div>
   );
 }
+
+
 const mapStateToProps = state => {
   return {
     state: state,
@@ -43,14 +36,11 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    updateLiveGamesHandler :  ()=> dispatch({type: 'UPDATE_LIVE_GAMES_VISIBILITY'}),
-    getGameInfoHandler: (val) => axios.get("http://localhost:8080/getGameData/", {params: {gameId: val}}).then(response => {
-        dispatch({
-          type: 'GET_GAME_DATA',
-          response: response
-        });
-    })
-    // getGameInfoHandler     :  (gameId)
+    updateLiveGamesHandler: ()=> dispatch({type: 'UPDATE_LIVE_GAMES_VISIBILITY'}),
+    getTeamInfoHandler: (teamId) => {
+      console.log('det data for team: ' + teamId);
+    }
+    // getMatchInfoHandler     :  (gameId)
   }
 }
 

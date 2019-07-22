@@ -2,14 +2,14 @@ const express = require('express');
 const app = express();
 const fs = require('fs');
 const logger = require('morgan');
+const cors = require('cors')
 
 const Config = require('./env/Config');
 const routes = require('./routes/Routes');
 
-const responseParseHandler = require('./utils/ResponseHandler');
 const emitter = require('./utils/Emitter');
 const teamController = require('./controllers/teamController');
-const tournamentController = require('./controllers/tournamentController');
+const matchesController = require('./controllers/matchesController');
 
 const LOGS_FOLDER = './logs/';
 const LOGS_FILE = Config.LOGS.MORGAN_LOGS_FILE;
@@ -19,8 +19,9 @@ app.use(logger('combined', {
   stream: fs.createWriteStream(LOGS_FOLDER + LOGS_FILE, {flags: 'a'})
 }));
 
+app.use(cors())
 
-//possible endpoint for farther filtering
+// possible endpoint for farther filtering
 // '/team/:teamName/:status?/:tournamentName?'
 
 app.get(routes.TEAMS_ROUTE, (req, res) => {
@@ -37,21 +38,12 @@ app.get(routes.TEAMS_ROUTE, (req, res) => {
   teamController.getTeams(req, res);
 });
 
-//possible endpoint for farther filtering
-// '/tournament/:tournamentName/:status?/:teamName'
+app.get('/matches/:status', (req, res) => {
+    matchesController.getMatchesByStatus(req, res);
+});
 
-app.get(routes.TOURNAMENTS_ROUTE, (req, res) => {
-  //general error handling for this endpoint
-  let errorsSubscription = emitter.subscribe('errorEmitter', (e) => {
-    let errorObj = {
-      error: e.toString(),
-      errorMsg: config.MESSAGES.GAMES_ERROR
-    }
-    errorsSubscription.unsubscribe();
-    res.send(responseParseHandler.createResponse('error', [], req, errorObj));
-  });
-
-  tournamentController.getTeams(req, res);
+app.get('/match/:id', (req, res) => {
+  // matchesController.getMatcheDataById(req, res);
 });
 
 app.listen(process.env.PORT || 4000, () => {

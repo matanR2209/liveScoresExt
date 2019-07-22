@@ -1,0 +1,18 @@
+{
+  "data": {
+    "id": 8,
+    "legacy_id": 6,
+    "country_id": 11,
+    "name": "Premier league",
+    "is_cup": false,
+    "current_season_id": 1,
+    "current_round_id": 1,
+    "current_stage_id": 7,
+    "live_standings": true,
+    "coverage": {
+      "topscorer_goals": true,
+      "topscorer_assists": true,
+      "topscorer_cards": true
+    }
+  }
+}

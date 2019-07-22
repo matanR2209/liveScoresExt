@@ -1,14 +1,19 @@
 module.exports = class Team {
-  constructor(teamName) {
-    this.name = teamName;
-    this.id = '_' + teamName;
+  constructor(team) {
+    Object.assign(this, team);
+    this.lineup = {};
+    this.bench = {};
+    this.GeneralSquad = {};
+
   }
 
-  get _name() {
-    return this.name;
+  setMatchSquad(lineup, bench) {
+    this.lineup = lineup;
+    this.bench = bench;
   }
 
-  get _id() {
-    return this.id;
+  setGeneralSquad(squad) {
+    this.GeneralSquad = squad;
   }
+
 };

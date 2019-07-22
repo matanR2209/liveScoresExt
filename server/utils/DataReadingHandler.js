@@ -1,54 +1,55 @@
+const Team = require('../model/Team');
 const Match = require('../model/Match');
-const Tournament = require('../model/Tournament');
+const _ = require('lodash');
 
-const DataTransformer = require('./DataTransformingHandler');
 const emitter = require('./Emitter');
+const Config = require('../env/Config');
+
+const liveMatches = require('../data/matches/live_matches')
 
 module.exports = {
   getMatches: (searchBy, value, cb) => {
-    try {
-      // activate the data transforming, which will emit the 'matchesLoaded' an event once finished, with the matches list
-      DataTransformer.transform();
-      const matchesLoadedSubscription = emitter.subscribe('matchesLoaded', (totalMatches) => {
-        switch (searchBy) {
-          case 'teams': {
-            const matchesByTeam = filterMatchesByTeam(totalMatches, value);
-            cb(matchesByTeam);
-            break;
-          }
-          case 'tournaments': {
-            const matchesByTournament = filterMatchesByTournament(totalMatches, value);
-            const newTournament = new Tournament(value, matchesByTournament);
-            cb(newTournament.matchesList);
-            break;
-          }
-          default:
-            cb([]);
-        }
-        matchesLoadedSubscription.unsubscribe();
-      });
-    } catch (e) {
-      emitter.emit('errorEmitter', e);
+    switch (Config.FILE_TYPE) {
+      case 'csv': {
+        break;
+      }
+      // case 'http' :
+      //   transformHTTPToArray();
+      //   return
+      case 'json':
+        transformJSONToArray(cb);
+        return;
+      default:
+        emitter.emit('matchesLoaded', []);
     }
   },
 };
 
-filterMatchesByTeam = (matches, teamName) => {
-  let resultMatchesByTeam = [];
-  matches.forEach((match) => {
-    if (match.data.home_team === teamName || match.data.away_team === teamName) {
-      resultMatchesByTeam.push(new Match(match.data, match.file));
+transformJSONToArray = (cb) => {
+  let gamesByLeagues = [];
+  liveMatches.data.forEach((match) => {
+    const homeTeam = new Team(match.localTeam.data);
+    const awayTeam = new Team(match.visitorTeam.data);
+    let league = getLeagueData(match);
+    match.league = league;
+    index = _.findIndex(gamesByLeagues, {leagueId: match.league_id});
+    if(index !== -1) {
+      gamesByLeagues[index].matches.push(new Match(homeTeam, awayTeam, match));
+    } else {
+      let tempLeague = {
+        leagueId: league.id,
+        leagueName: league.name,
+        matches: [new Match(homeTeam, awayTeam, match)]
+      }
+      gamesByLeagues.push(tempLeague);
     }
   });
-  return resultMatchesByTeam;
-};
+  cb(gamesByLeagues);
+}
 
-filterMatchesByTournament = (matches, tournament) => {
-  let resultMatchesByTournament = [];
-  matches.forEach((match) => {
-    if (match.data.tournament === tournament) {
-      resultMatchesByTournament.push(new Match(match.data, match.file));
-    }
-  });
-  return resultMatchesByTournament;
-};
+getLeagueData = (match) => {
+  let league = require('../data/league/leauge');
+  return league.data;
+}
+
+

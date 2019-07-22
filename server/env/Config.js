@@ -1,7 +1,8 @@
 module.exports = Object.freeze({
-  FILE_TYPE: 'csv',
+  FILE_TYPE: 'json',
   PLAYED_GAMES_FILE_NAME: 'result_played.csv',
   UPCOMING_GAMES_FILE_NAME: 'result_upcoming.csv',
+  ONGOING_GAMES_FILE_NAME: 'result_ongoing.csv',
 
   LOGS: {
     RESPONSE_LOGGER_CONTROL: true,

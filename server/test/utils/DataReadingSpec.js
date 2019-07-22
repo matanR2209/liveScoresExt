@@ -3,7 +3,6 @@ const expect = require('chai').expect;
 
 const Match = require('../../model/Match');
 
-const dataReadingHandler = require('../../utils/DataReadingHandler');
 const testingData = require('../testindData');
 const emitter = require('../../utils/Emitter');
 
