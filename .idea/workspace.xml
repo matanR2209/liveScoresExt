@@ -2,41 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b6bffb3-54e3-49d1-bc3a-a956aae4bca5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server/controllers/matchesController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/data/league/leauge.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/data/match_data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/data/matches/live_matches.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/model/Player.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Modal/Modal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Modal/Modal.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/containers/Player/Player.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/LiveScoresBox/LiveScoresBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/LiveScoresBox/LiveScoresBox.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/LiveScoresBox/LiveScoresBox.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/LiveScoresBox/LiveScoresBox.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Player/Player.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Player/Player.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/containers/Player/Player.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/SideButton/SideButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/SideButton/SideButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/SideButton/SideButton.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/SideButton/SideButton.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/SpiningUpdates/SpiningUpdates.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/SpiningUpdates/SpiningUpdates.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/TeamLineup/TeamLineup.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/TeamLineup/TeamLineup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/containers/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/containers/App/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/containers/Frame/Frame.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/containers/Frame/Frame.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/redux.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/store/reducers/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/store/reducers/reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/teamController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/teamController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/tournamentController.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/data/result_played.csv" beforeDir="false" afterPath="$PROJECT_DIR$/server/data_original/result_played.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/data/result_upcoming.csv" beforeDir="false" afterPath="$PROJECT_DIR$/server/data_original/result_upcoming.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/env/Config.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/env/Config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/logs/general_logs.log" beforeDir="false" afterPath="$PROJECT_DIR$/server/logs/general_logs.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/logs/morgan_logs.log" beforeDir="false" afterPath="$PROJECT_DIR$/server/logs/morgan_logs.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/model/Match.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/model/Match.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/model/Team.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/model/Team.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/test/utils/DataReadingSpec.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/test/utils/DataReadingSpec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/test/utilsTestsCollection.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/test/utilsTestsCollection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/utils/ConvertParamsToFilters.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/utils/DataReadingHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/utils/DataReadingHandler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/utils/DataTransformingHandler.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/utils/FilteringHandler.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/utils/ResponseHandler.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/utils/ResponseLogger.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -65,43 +49,43 @@
           <entry key="css" value="5" />
           <entry key="csv" value="3" />
           <entry key="gitignore" value="3" />
-          <entry key="html" value="3" />
-          <entry key="js" value="144" />
-          <entry key="json" value="19" />
+          <entry key="html" value="4" />
+          <entry key="js" value="166" />
+          <entry key="json" value="22" />
           <entry key="md" value="1" />
           <entry key="png" value="1" />
-          <entry key="scss" value="32" />
+          <entry key="scss" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="5" />
-          <entry key="HTML" value="3" />
+          <entry key="HTML" value="4" />
           <entry key="Image" value="1" />
-          <entry key="JSON" value="19" />
-          <entry key="JavaScript" value="144" />
+          <entry key="JSON" value="22" />
+          <entry key="JavaScript" value="166" />
           <entry key="PLAIN_TEXT" value="7" />
-          <entry key="SCSS" value="32" />
+          <entry key="SCSS" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="98" />
           <entry key="dummy" value="14" />
-          <entry key="html" value="18" />
-          <entry key="js" value="13470" />
+          <entry key="html" value="20" />
+          <entry key="js" value="16853" />
           <entry key="json" value="95" />
-          <entry key="scss" value="1196" />
+          <entry key="scss" value="1549" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="98" />
-          <entry key="HTML" value="18" />
+          <entry key="HTML" value="20" />
           <entry key="JSON" value="95" />
-          <entry key="JavaScript" value="13470" />
+          <entry key="JavaScript" value="16853" />
           <entry key="PLAIN_TEXT" value="14" />
-          <entry key="SCSS" value="1196" />
+          <entry key="SCSS" value="1549" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -114,50 +98,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/components/LiveScoresBox/LiveScoresBox.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/src/components/Modal/Modal.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+            <state relative-caret-position="465">
+              <caret line="51" column="31" lean-forward="true" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#0#50#0" expanded="true" />
+                <element signature="e#1069#1513#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/components/Modal/Modal.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
+            <state relative-caret-position="180">
+              <caret line="44" column="3" lean-forward="true" selection-start-line="44" selection-start-column="3" selection-end-line="44" selection-end-column="3" />
+              <folding>
+                <element signature="e#50#64#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/components/LiveScoresBox/LiveScoresBox.scss">
+        <entry file="file://$PROJECT_DIR$/server/data/matches/live_matches.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+            <state relative-caret-position="110">
+              <caret line="5375" column="32" selection-start-line="5375" selection-start-column="17" selection-end-line="5375" selection-end-column="32" />
+              <folding>
+                <element signature="e#47570#49132#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/data/league/leauge.json">
+        <entry file="file://$PROJECT_DIR$/client/src/store/reducers/reducer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="9" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/data/match_data.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21300">
-              <caret line="1420" column="20" selection-start-line="1420" selection-start-column="20" selection-end-line="1420" selection-end-column="20" />
+            <state relative-caret-position="105">
+              <caret line="72" column="3" selection-start-line="72" selection-start-column="3" selection-end-line="72" selection-end-column="3" />
+              <folding>
+                <element signature="e#136#2005#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -168,36 +153,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="SCSS File" />
         <option value="JavaScript File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>PLAYER_IMAGE</find>
-      <find>live-games-container</find>
-      <find>dataFo</find>
-      <find>dataFolder</find>
-      <find>updateDataPresentedHandler</find>
-      <find>4000</find>
-      <find>fetchGameData</find>
-      <find>response:</find>
-      <find>GET_LIVE_GAMES</find>
-      <find>initialState</find>
-      <find>/im</find>
-      <find>silva</find>
-      <find>UPDATE_PRESENTED_TEAM</find>
-      <find>UPDATE_STATS_VISIBILITY</find>
-      <find>getMatchInfoHandler</find>
-      <find>getGameInfoHandler</find>
-      <find>dataF</find>
-      <find>console.l</find>
-      <find>10333026</find>
-      <find>bench</find>
-      <find>ResponseHa</find>
-      <find>convertPara</find>
-      <find>tournamen</find>
       <find>DataRead</find>
       <find>FiltersH</find>
       <find>FilteringHand</find>
@@ -205,12 +167,36 @@
       <find>console.log</find>
       <find>away team:</find>
       <find>filterMatchesByTeam</find>
+      <find>updateDataPresentedHandler</find>
+      <find>updatedPresentedMachHandler</find>
+      <find>GET_GAME_DATA</find>
+      <find>props.</find>
+      <find>updatedPresentedMatch</find>
+      <find>Everton</find>
+      <find>showTeamsButtons</find>
+      <find>getMatchInfoHandler</find>
+      <find>setPresentedTeamHandler</find>
+      <find>console.l</find>
+      <find>fer</find>
+      <find>ague</find>
+      <find>&quot;G&quot;</find>
+      <find>props</find>
+      <find>teamLineupController</find>
+      <find>this.props.player</find>
+      <find>img</find>
+      <find>jos</find>
+      <find>&lt;img</find>
+      <find>paddi</find>
+      <find>margin</find>
+      <find>match-stats</find>
+      <find>sergi</find>
     </findStrings>
     <replaceStrings>
       <replace>selectedTeam</replace>
       <replace>playerName: nameGen(3), playerImage: '../../assets/images/soccer_avatar.png'</replace>
-      <replace>this.props</replace>
       <replace>playerName: nameGen(3), playerImage: PLAYER_IMAGE</replace>
+      <replace>this.props</replace>
+      <replace>player</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src</dir>
@@ -218,6 +204,7 @@
       <dir>$PROJECT_DIR$</dir>
       <dir>$PROJECT_DIR$/client</dir>
       <dir>$PROJECT_DIR$/server</dir>
+      <dir>$PROJECT_DIR$/client/src</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -226,14 +213,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/assets/components/SideButton/SideButton.scss" />
-        <option value="$PROJECT_DIR$/src/assets/containers/App/App.js" />
-        <option value="$PROJECT_DIR$/src/assets/components/SideButton/SideButton.js" />
-        <option value="$PROJECT_DIR$/src/assets/components/Frame/Frame.js" />
-        <option value="$PROJECT_DIR$/src/assets/components/Frame/Frame.scss" />
-        <option value="$PROJECT_DIR$/src/components/Frame/Frame.scss" />
-        <option value="$PROJECT_DIR$/src/components/Frame/Frame.js" />
-        <option value="$PROJECT_DIR$/src/containers/App/App.js" />
         <option value="$PROJECT_DIR$/src/components/TeamLineup/TeamLineup.scss" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/components/TeamLineup/TeamLineup.js" />
@@ -257,8 +236,6 @@
         <option value="$PROJECT_DIR$/server/middleware/renderer.js" />
         <option value="$PROJECT_DIR$/server/bootstrap.js" />
         <option value="$PROJECT_DIR$/client/package.json" />
-        <option value="$PROJECT_DIR$/client/src/containers/App/App.js" />
-        <option value="$PROJECT_DIR$/client/src/components/SideButton/SideButton.js" />
         <option value="$PROJECT_DIR$/server/utils/ResponseHandler.js" />
         <option value="$PROJECT_DIR$/client/src/redux.js" />
         <option value="$PROJECT_DIR$/server/data/games/game_data.json" />
@@ -270,13 +247,23 @@
         <option value="$PROJECT_DIR$/server/model/Player.js" />
         <option value="$PROJECT_DIR$/server/model/Match.js" />
         <option value="$PROJECT_DIR$/server/controllers/matchesController.js" />
-        <option value="$PROJECT_DIR$/client/src/containers/Frame/Frame.js" />
-        <option value="$PROJECT_DIR$/client/src/store/reducers/reducer.js" />
         <option value="$PROJECT_DIR$/server/data/league/leauge.json" />
         <option value="$PROJECT_DIR$/server/utils/DataReadingHandler.js" />
         <option value="$PROJECT_DIR$/client/src/components/LiveScoresBox/LiveScoresBox.scss" />
-        <option value="$PROJECT_DIR$/client/src/components/LiveScoresBox/LiveScoresBox.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/client/src/components/Player/Player.scss" />
+        <option value="$PROJECT_DIR$/client/src/components/Player/Player.js" />
+        <option value="$PROJECT_DIR$/client/src/containers/Frame/Frame.js" />
+        <option value="$PROJECT_DIR$/client/src/components/TeamLineup/TeamLineup.js" />
+        <option value="$PROJECT_DIR$/client/src/components/LiveScoresBox/LiveScoresBox.js" />
+        <option value="$PROJECT_DIR$/client/src/containers/App/App.js" />
+        <option value="$PROJECT_DIR$/client/public/index.html" />
+        <option value="$PROJECT_DIR$/client/src/components/SideButton/SideButton.scss" />
+        <option value="$PROJECT_DIR$/client/src/components/SideButton/SideButton.js" />
+        <option value="$PROJECT_DIR$/client/src/store/reducers/reducer.js" />
+        <option value="$PROJECT_DIR$/client/src/containers/Player/Player.js" />
+        <option value="$PROJECT_DIR$/client/src/components/Modal/Modal.js" />
+        <option value="$PROJECT_DIR$/client/src/components/Modal/Modal.scss" />
       </list>
     </option>
   </component>
@@ -304,7 +291,7 @@
       <path value="$PROJECT_DIR$/server/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="820" />
@@ -358,6 +345,17 @@
               <item name="chrome-sport-ext" type="b2602c69:ProjectViewProjectNode" />
               <item name="chrome-sport-ext" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="chrome-sport-ext" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chrome-sport-ext" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chrome-sport-ext" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chrome-sport-ext" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -366,7 +364,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="data&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/server/utils/DataReadingHandler.js&#10;li&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/components/LiveScoresBox/LiveScoresBox.js&#10;red&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/store/reducers/reducer.js&#10;Fra&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/containers/Frame/Frame.js&#10;Co&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/server/env/Config.js&#10;redu&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/store/reducers/reducer.js&#10;S&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/components/SideButton/SideButton.js&#10;app&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/server/app.js&#10;si&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/components/SideButton/SideButton.js&#10;giti&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/.gitignore&#10;LiveB&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/components/LiveScoresBox/LiveScoresBox.js&#10;man&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/public/manifest.json&#10;Pla&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/components/Player/Player.scss&#10;stat&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/components/StatsBox/StatsBox.js&#10;live&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/components/LiveScoresBox/LiveScoresBox.scss&#10;Frame&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/containers/Frame/Frame.js&#10;s&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/components/SideButton/SideButton.js&#10;package&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/package.json&#10;fra&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/containers/Frame/Frame.js&#10;redux&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/redux.js&#10;Fr&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/containers/Frame/Frame.js&#10;side&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/components/SideButton/SideButton.js&#10;Line&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/components/TeamLineup/TeamLineup.js&#10;frame&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/containers/Frame/Frame.js&#10;reduc&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/store/reducers/reducer.js&#10;team&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/components/TeamLineup/TeamLineup.js&#10;fra,e&#9;null&#9;null&#10;app.&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/assets/containers/App/App.js&#10;index&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/index.js&#10;App&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/assets/containers/App/App.js" />
+    <property name="SearchEverywhereHistoryKey" value="red&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/store/reducers/reducer.js&#10;Fra&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/containers/Frame/Frame.js&#10;side&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/components/SideButton/SideButton.js&#10;index&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/public/index.html&#10;app&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/containers/App/App.js&#10;Team&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/components/TeamLineup/TeamLineup.js&#10;redu&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/store/reducers/reducer.js&#10;sid&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/components/SideButton/SideButton.js&#10;data&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/server/utils/DataReadingHandler.js&#10;F&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/containers/Frame/Frame.js&#10;li&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/components/LiveScoresBox/LiveScoresBox.js&#10;Co&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/server/env/Config.js&#10;S&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/components/SideButton/SideButton.js&#10;si&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/components/SideButton/SideButton.js&#10;giti&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/.gitignore&#10;LiveB&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/components/LiveScoresBox/LiveScoresBox.js&#10;man&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/public/manifest.json&#10;Pla&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/components/Player/Player.scss&#10;stat&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/components/StatsBox/StatsBox.js&#10;live&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/components/LiveScoresBox/LiveScoresBox.scss&#10;Frame&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/containers/Frame/Frame.js&#10;s&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/components/SideButton/SideButton.js&#10;package&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/package.json&#10;fra&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/containers/Frame/Frame.js&#10;redux&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/redux.js&#10;Fr&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/containers/Frame/Frame.js&#10;Line&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/components/TeamLineup/TeamLineup.js&#10;frame&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/containers/Frame/Frame.js&#10;reduc&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/store/reducers/reducer.js&#10;team&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/components/TeamLineup/TeamLineup.js&#10;fra,e&#9;null&#9;null&#10;app.&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/assets/containers/App/App.js&#10;App&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/assets/containers/App/App.js" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
@@ -387,17 +385,17 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/server/data/matches" />
-      <recent name="$PROJECT_DIR$/server/data" />
-      <recent name="$PROJECT_DIR$/public" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src/containers" />
       <recent name="$PROJECT_DIR$/server/data/matches" />
       <recent name="$PROJECT_DIR$/server/data" />
       <recent name="$PROJECT_DIR$/server/data_original" />
       <recent name="$PROJECT_DIR$/client" />
-      <recent name="$PROJECT_DIR$/src/containers" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/server/data/matches" />
+      <recent name="$PROJECT_DIR$/server/data" />
+      <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -436,23 +434,23 @@
       <workItem from="1562790028699" duration="1112000" />
       <workItem from="1563353917993" duration="5195000" />
       <workItem from="1563372440306" duration="43092000" />
-      <workItem from="1563795906531" duration="5266000" />
+      <workItem from="1563795906531" duration="25124000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146100000" />
+    <option name="totallyTimeSpent" value="165958000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="820" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="842" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49891067" visible="true" weight="0.15785764" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49891067" visible="true" weight="0.15574348" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" sideWeight="0.50108933" side_tool="true" weight="0.15785764" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32967034" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32933334" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32967034" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -461,7 +459,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5003524" side_tool="true" weight="0.3695055" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49964765" visible="true" weight="0.3695055" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49964765" visible="true" weight="0.35866666" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -469,21 +467,23 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15785764" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49891067" visible="true" weight="0.15574348" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="npm" order="2" sideWeight="0.50108933" side_tool="true" weight="0.15785764" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32967034" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32933334" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32967034" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32967034" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5003524" side_tool="true" weight="0.3695055" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49964765" weight="0.35866666" />
+      <window_info anchor="bottom" id="TypeScript" order="11" />
+      <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -499,41 +499,6 @@
     <option name="LIMIT_HISTORY" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/src/components/TeamLineup/TeamLineup.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/containers/Frame/Frame.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/TeamLineup/TeamLineup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="30" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/SideButton/SideButton.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/serviceWorker.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -541,24 +506,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/Player/Player.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="132" selection-start-line="4" selection-start-column="132" selection-end-line="4" selection-end-column="132" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/public/manifest.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/Player/Player.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -580,13 +531,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/server.js" />
-    <entry file="file://$PROJECT_DIR$/client/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/assets/fixtures/team.json" />
     <entry file="file://$PROJECT_DIR$/client/README.md">
       <provider selected="true" editor-type-id="text-editor">
@@ -614,20 +558,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/server/data/result_played.csv" />
-    <entry file="file://$PROJECT_DIR$/client/src/containers/App/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="14" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/SideButton/SideButton.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="5" column="29" lean-forward="true" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/data/result_ongoing.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -650,6 +580,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-25">
           <caret line="75" column="5" lean-forward="true" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
+          <folding>
+            <element signature="e#237#1500#0" />
+            <element signature="e#1515#1980#0" />
+            <element signature="e#2061#3324#0" />
+            <element signature="e#3339#3804#0" />
+            <element signature="e#3889#5152#0" />
+            <element signature="e#5167#5632#0" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -685,13 +623,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="41" column="37" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/model/Team.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -713,23 +644,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/containers/Frame/Frame.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="32" column="45" lean-forward="true" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/store/reducers/reducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="48" column="38" lean-forward="true" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/controllers/matchesController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -737,27 +651,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/data/matches/live_matches.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11">
-          <caret line="2" column="5" lean-forward="true" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
-          <folding>
-            <element signature="e#47570#49132#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/data/match_data.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21300">
           <caret line="1420" column="20" selection-start-line="1420" selection-start-column="20" selection-end-line="1420" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/utils/DataReadingHandler.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-67">
-          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -782,20 +679,147 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/LiveScoresBox/LiveScoresBox.js">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+        <state relative-caret-position="15">
+          <caret line="1" column="19" lean-forward="true" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/build/static/js/main.5b5913ac.chunk.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5886" selection-start-column="5886" selection-end-column="5886" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/utils/DataReadingHandler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/containers/Player/Player.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/TeamLineup/TeamLineup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="41" column="37" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/containers/App/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/SideButton/SideButton.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/client/src/components/SideButton/SideButton.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
+        <state relative-caret-position="-88">
+          <caret column="14" lean-forward="true" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/store/reducers/reducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="72" column="3" selection-start-line="72" selection-start-column="3" selection-end-line="72" selection-end-column="3" />
+          <folding>
+            <element signature="e#136#2005#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/containers/Frame/Frame.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="14" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/containers/Player/Player.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/LiveScoresBox/LiveScoresBox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-76">
+          <caret line="1" selection-start-line="1" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/Modal/Modal.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="44" column="3" lean-forward="true" selection-start-line="44" selection-start-column="3" selection-end-line="44" selection-end-column="3" />
+          <folding>
+            <element signature="e#50#64#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/data/matches/live_matches.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5375" column="32" selection-start-line="5375" selection-start-column="17" selection-end-line="5375" selection-end-column="32" />
+          <folding>
+            <element signature="e#47570#49132#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/Modal/Modal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="51" column="31" lean-forward="true" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+            <element signature="e#1069#1513#0" />
+          </folding>
         </state>
       </provider>
     </entry>

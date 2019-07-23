@@ -1,24 +1,30 @@
 import React from 'react';
 import './SideButton.scss';
-import connect from 'react-redux/es/connect/connect'
+
 const SideButton = (props) => {
+  const setButton = () => {
+    if(props.img) {
+      return (
+        <button className="side-button">
+          <div>{props.label}</div>
+          <div><img src={props.img}/></div>
+        </button>
+      );
+    }else {
+      return (
+        <button >
+          <div>{props.label}</div>
+        </button>
+      );
+    }
+  }
+
+  const button = setButton();
   return (
     <div onClick={props.action} >
-      <button>{props.label}</button>
+      {button}
     </div>
   );
 }
 
-const mapStateToProps = state => {
-  return {
-    state: state,
-  }
-}
-
-const mapDispatchToProps = dispatch => {
-  return {
-    // updateDataPresentedHandler :  (val)=> dispatch({type: 'UPDATE_PRESENTED_TEAM', value: val})
-  }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(SideButton);
+export default SideButton;

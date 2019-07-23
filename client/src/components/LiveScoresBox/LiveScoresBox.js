@@ -13,7 +13,7 @@ const LiveScoreBox = (props) => {
           <td> - </td>
           <td>{match.matchData.scores.visitorteam_score}</td>
           <td className="teamName">{match.awayTeam.name}</td>
-          <td className="info">i</td>
+          <td className="info" onClick={() => props.updatedPresentedMatch(league.leagueId, match.matchData.id)} >i</td>
         </tr>
       })
     return <Fragment key={leagueIndex}><tr className="league-name"><td colSpan={6}>{league.leagueName}</td></tr>{games}</Fragment>
@@ -35,13 +35,7 @@ const mapStateToProps = state => {
 }
 
 const mapDispatchToProps = dispatch => {
-  return {
-    updateLiveGamesHandler: ()=> dispatch({type: 'UPDATE_LIVE_GAMES_VISIBILITY'}),
-    getTeamInfoHandler: (teamId) => {
-      console.log('det data for team: ' + teamId);
-    }
-    // getMatchInfoHandler     :  (gameId)
-  }
+  return {}
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(LiveScoreBox);

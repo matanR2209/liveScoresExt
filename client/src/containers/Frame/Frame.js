@@ -17,14 +17,13 @@ class Frame extends Component {
       <div>
         <div className="side-buttons">
           <div className="buttons-container">
-            {this.liveGamesAndScoresButtonHandler(this.props.state.isLiveGamesOpen)}
-            {/*{showTeamsButtons(this.props.state)}*/}
-            {/*{determinateStatsViability(this.props.state)}*/}
+            {this.liveGamesAndScoresButtonHandler()}
+            {this.showTeamsButtonsHandler()}
           </div>
         </div>
-        {/*<div className="bottom-frame">*/}
-          {/*{teamLineupController(this.props.state)}*/}
-        {/*</div>*/}
+        <div className="bottom-frame">
+          {this.showTeamLineupHandler()}
+        </div>
       </div>
     )
   }
@@ -34,38 +33,28 @@ class Frame extends Component {
     })
   }
 
-  liveGamesAndScoresButtonHandler = (val) => {
-    return val ? <LiveScoreBox fetchMatch = {(matchId) => this.fetchMatchDataHandler (matchId)} /> : <SideButton val={'live'} label={'Live games'} action={() => this.fetchLiveGames()} />;
+  liveGamesAndScoresButtonHandler = () => {
+    return this.props.state.isLiveGamesOpen ? <LiveScoreBox
+      updatedPresentedMatch = {(leagueId, matchId) => this.updatedPresentedMatchHandler(leagueId, matchId)} /> : <SideButton val={'live'} label={'Live games'} action={() => this.fetchLiveGames()} />;
   }
 
+  updatedPresentedMatchHandler = (matchId, leagueId) => {
+    this.props.getMatchInfoHandler(matchId, leagueId);
+  }
 
-  fetchMatchDataHandler = (matchId) => {
-    axios.get("http://localhost:4000/match/" + matchId).then((response) => {
-      console.log('get data for game: ' + matchId);
-      this.props.getMatchInfoHandler(response);
-    })
+  updateSelectedTeamHandler = (val) => {
+    this.props.setPresentedTeamHandler(val);
+  }
+  showTeamsButtonsHandler = () => {
+    return this.props.state.homeTeam.name && this.props.state.awayTeam.name ?
+      (<div><SideButton action={() => this.updateSelectedTeamHandler('home')} label={this.props.state.homeTeam.name} img={this.props.state.homeTeam.logo_path} />
+        <SideButton action={() => this.updateSelectedTeamHandler('away')} label={this.props.state.awayTeam.name} img={this.props.state.awayTeam.logo_path} />
+      </div>): ''
+  }
+  showTeamLineupHandler = () => {
+    return this.props.state.selectedTeam.lineup ? <TeamLineup presentedTeam={this.props.state.selectedTeam}/>: '';
   }
 }
-// const showTeamsButtons = (tempState) => {
-//   return tempState.homeTeam.name && tempState.awayTeam.name ?
-//     (<div><SideButton val={'home'} label={tempState.homeTeam.name} /> <SideButton val={'away'} label={tempState.awayTeam.name} /></div>): ''
-// }
-//
-// const teamLineupController = (tempState) => {
-//   // console.log(tempState);
-//   return tempState.selectedTeam.lineup && tempState.selectedTeam.lineup.starters ? <TeamLineup presentedTeam={tempState.selectedTeam}/>: '';
-// }
-//
-// const determinateStatsViability = (tempState) => {
-//   if((tempState.stats.gameId) ) {
-//     if(tempState.isStatsOpen) {
-//       return <StatsBox/>
-//     }else {
-//       return <SideButton val={'stats'} label={"stats"} />;
-//     }
-//   }
-// }
-
 
 const mapStateToProps = state => {
   return {
@@ -81,15 +70,22 @@ const mapDispatchToProps = dispatch => {
         response: response.data
       });
     },
-    getMatchInfoHandler: (response) => {
+    getMatchInfoHandler: (leagueId, matchId) => {
       dispatch({
         type: 'GET_GAME_DATA',
-        response: response.data
+        data: {
+          leagueId: leagueId,
+          matchId: matchId
+        }
+      });
+    },
+    setPresentedTeamHandler: (val) => {
+      dispatch({
+        type: 'SET_PRESENTED_TEAM',
+        val: val
       });
     },
   };
 }
-
-
 
 export default connect(mapStateToProps, mapDispatchToProps)(Frame);
