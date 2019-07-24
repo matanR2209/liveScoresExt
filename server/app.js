@@ -7,43 +7,25 @@ const cors = require('cors')
 const Config = require('./env/Config');
 const routes = require('./routes/Routes');
 
-const emitter = require('./utils/Emitter');
-const teamController = require('./controllers/teamController');
 const matchesController = require('./controllers/matchesController');
-
-const LOGS_FOLDER = './logs/';
-const LOGS_FILE = Config.LOGS.MORGAN_LOGS_FILE;
-
-//morgan logger for general request-response information
-app.use(logger('combined', {
-  stream: fs.createWriteStream(LOGS_FOLDER + LOGS_FILE, {flags: 'a'})
-}));
+const teamController = require('./controllers/teamController');
+const playerController = require('./controllers/playerController');
 
 app.use(cors())
 
-// possible endpoint for farther filtering
-// '/team/:teamName/:status?/:tournamentName?'
 
-app.get(routes.TEAMS_ROUTE, (req, res) => {
-  //general error handling for this endpoint
-    let errorsSubscription = emitter.subscribe('errorEmitter', (e) => {
-      let errorObj = {
-        error: e.toString(),
-        errorMsg: config.MESSAGES.GAMES_ERROR
-      }
-      errorsSubscription.unsubscribe();
-      res.send(responseParseHandler.createResponse('error',[], req , errorObj));
+app.get('/liveMatches', (req, res) => {
+    matchesController.getLiveMatches((matchesList) => {
+      res.send(matchesList);
     });
-
-  teamController.getTeams(req, res);
 });
 
-app.get('/matches/:status', (req, res) => {
-    matchesController.getMatchesByStatus(req, res);
-});
+app.get('/teams/:teamId', (req, res) => {
+  teamController.getTeam(req, res);
+})
 
-app.get('/match/:id', (req, res) => {
-  // matchesController.getMatcheDataById(req, res);
+app.get('/player/:playerId', (req, res) => {
+  playerController.getPlayerExtendedData(req, res);
 });
 
 app.listen(process.env.PORT || 4000, () => {

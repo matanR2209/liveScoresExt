@@ -28,7 +28,7 @@ class Frame extends Component {
     )
   }
   fetchLiveGames = () => {
-    axios.get("http://localhost:4000/matches/ongoing").then((response) => {
+    axios.get("http://localhost:4000/liveMatches").then((response) => {
       this.props.getLiveGamesHandler(response);
     })
   }

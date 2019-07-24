@@ -1,27 +1,4 @@
 module.exports = class Tournament {
-  constructor(tourName, games = []) {
-    this.name = tourName;
-    this.id = '_' + tourName;
-    this.matchesList = games;
-  }
+  constructor(tournament) {}
 
-  get _name() {
-    return this.name;
-  }
-
-  get _id() {
-    return this.id;
-  }
-
-  resetTournamentMatches() {
-    this.matchesList = [];
-  }
-
-  addMatches(matches) {
-    if (Array.isArray(matches)) {
-      this.matchesList = matches;
-    } else {
-      this.matchesList.push(matches);
-    }
-  }
 };
