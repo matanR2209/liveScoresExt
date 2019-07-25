@@ -3,12 +3,8 @@ import StatRow from './StatRow/StatRow'
 
 const _ = require('lodash');
 
-// shots,
-// shots on target, possession, passes, pass accuary, fouls, yellow cards, red cards, offsides, corners
-
-
-
 const MatchStats = (props) => {
+  console.log()
   let statsCollection = [
     {
       jsonValLocation: 'shots.total',
@@ -71,6 +67,7 @@ const MatchStats = (props) => {
       awayVal: ''
     },
   ]
+
   let matchStats = props.stats;
   let homeValues = matchStats.stats.data[_.findIndex(matchStats.stats.data, {team_id: props.homeTeam})];
   let awayValues = matchStats.stats.data[_.findIndex(matchStats.stats.data, {team_id: props.awayTeam})];

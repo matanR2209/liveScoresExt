@@ -75,8 +75,24 @@ const initialState = {
   modalContent: '',
   isModalOpen: false,
   isLiveGamesOpen: false,
-  liveGames: []
-
+  liveGames: [],
+  statsModal: {
+    tabs: [
+      {
+        value: 'timeline',
+        label: 'Timeline'
+      },
+      {
+        value: 'lineups',
+        label: 'Lineups'
+      },
+      {
+        value: 'stats',
+        label: 'Stats'
+      },
+    ],
+    selectedTab: {value: 'stats'}
+  }
 };
 
 const reducer = (state = initialState, action) => {
@@ -127,6 +143,11 @@ const reducer = (state = initialState, action) => {
       const newState = Object.assign({}, state);
       newState.isStatsOpen = !state.isStatsOpen;
       console.log('isStateOpen:' + newState.isStatsOpen);
+      return newState;
+    }
+    case 'SET_TABS_CONTENT': {
+      const newState = Object.assign({}, state);
+      newState.statsModal.selectedTab.value = action.value;
       return newState;
     }
     default: {

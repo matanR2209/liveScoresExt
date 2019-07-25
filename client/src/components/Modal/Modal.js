@@ -4,7 +4,7 @@ import connect from 'react-redux/es/connect/connect'
 
 import './Modal.scss';
 import PlayerModal from './PlayerModal/PlayerModal'
-import StatsModal from './StatsModal/StatsModal'
+import StatsModal from '../../containers/StatsModal/StatsModal'
 
 
 class GeneralModal extends Component {
@@ -19,7 +19,7 @@ class GeneralModal extends Component {
       }
       case 'stats': {
         selectedModal = <Modal show={this.props.state.isModalOpen}>
-          <StatsModal stats={this.props.state.stats} closeModal={()=> this.props.closeModalHandler()}/>
+          <StatsModal closeModal={()=> this.props.closeModalHandler()}/>
         </Modal>;
           break;
       }
