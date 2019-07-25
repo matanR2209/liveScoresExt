@@ -73,8 +73,7 @@ const initialState = {
   },
   bottomVisibility: '',
   modalContent: '',
-  isStatsOpen: false,
-  isModalOpen: true,
+  isModalOpen: false,
   isLiveGamesOpen: false,
   liveGames: []
 
@@ -82,42 +81,8 @@ const initialState = {
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case 'UPDATE_STATS_VISIBILITY': {
-      const newState = Object.assign({}, state);
-      if(action.response) {
-        newState.stats = action.response.data;
-      }
-      newState.isStatsOpen = !state.isStatsOpen;
-      if(newState.isStatsOpen){
-        newState.isLiveGamesOpen = false;
-      }
-      return newState;
-    }
-    case 'UPDATE_LIVE_GAMES_VISIBILITY': {
-      const newState = Object.assign({}, state);
-      if(action.response) {
-        newState.liveGames = action.response.data;
-      }
-      newState.isLiveGamesOpen = !state.isLiveGamesOpen;
-      if(newState.isLiveGamesOpen) {
-        newState.isStatsOpen = false;
-      }
-      return newState;
-    }
     case 'GET_GAME_DATA': {
-      let leagueId = action.data.leagueId;
-      let matchId = action.data.matchId;
-      let leagueIndex =  _.findIndex(state.liveGames, {leagueId: leagueId});
-      let matchIndex = _.findIndex(state.liveGames[leagueIndex].matches, (tempMatch) => {
-        return tempMatch.matchData.id === matchId;
-      });
-      let selectedMatch = state.liveGames[leagueIndex].matches[matchIndex];
-      const newState = Object.assign({}, state);
-      newState.homeTeam = selectedMatch.homeTeam;
-      newState.awayTeam = selectedMatch.awayTeam;
-      newState.stats = selectedMatch.matchData;
-      newState.isLiveGamesOpen = false;
-      return newState;
+      return handleGameData(state, action);
     }
     case 'GET_LIVE_GAMES': {
       const newState = Object.assign({}, state);
@@ -135,12 +100,22 @@ const reducer = (state = initialState, action) => {
       console.log('presented team: ' , newState.selectedTeam);
       return newState;
     }
-    case 'SHOW_PLAYER': {
-      console.log('present player: ' , action.player);
+    case 'OPEN_MODAL': {
       const newState = Object.assign({}, state);
+      console.log(newState.modalContent);
       newState.isModalOpen = true;
-      newState.modalContent = 'player';
-      newState.selectedPlayer = action.player;
+      if(action.player) {
+        newState.modalContent = 'player';
+        newState.selectedPlayer = action.player;
+      }
+      else if(action.teamId) {
+        newState.modalContent = 'team';
+        console.log('open modal team');
+      }
+      else if(action.stats) {
+        newState.modalContent = 'stats';
+        console.log('open modal stats');
+      }
       return newState;
     }
     case 'CLOSE_MODAL': {
@@ -148,9 +123,31 @@ const reducer = (state = initialState, action) => {
       newState.isModalOpen = false;
       return newState;
     }
+    case 'SET_STATS_VIEW': {
+      const newState = Object.assign({}, state);
+      newState.isStatsOpen = !state.isStatsOpen;
+      console.log('isStateOpen:' + newState.isStatsOpen);
+      return newState;
+    }
     default: {
       return state;
     }
   }
+}
+
+const handleGameData = (state, action) => {
+  let leagueId = action.data.leagueId;
+  let matchId = action.data.matchId;
+  let leagueIndex =  _.findIndex(state.liveGames, {leagueId: leagueId});
+  let matchIndex = _.findIndex(state.liveGames[leagueIndex].matches, (tempMatch) => {
+    return tempMatch.matchData.id === matchId;
+  });
+  let selectedMatch = state.liveGames[leagueIndex].matches[matchIndex];
+  const newState = Object.assign({}, state);
+  newState.homeTeam = selectedMatch.homeTeam;
+  newState.awayTeam = selectedMatch.awayTeam;
+  newState.stats = selectedMatch.matchData;
+  newState.isLiveGamesOpen = false;
+  return newState;
 }
 export default reducer;

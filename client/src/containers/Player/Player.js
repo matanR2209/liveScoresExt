@@ -68,7 +68,7 @@ const mapDispatchToProps = dispatch => {
   return {
     presentPlayerHandler :  (player) => {
       dispatch({
-        type: 'SHOW_PLAYER',
+        type: 'OPEN_MODAL',
         player: player
       });
     },

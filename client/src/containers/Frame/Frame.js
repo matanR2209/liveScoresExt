@@ -5,7 +5,7 @@ import './Frame.scss';
 
 import SideButton from '../../components/SideButton/SideButton'
 import TeamLineup from '../../components/TeamLineup/TeamLineup'
-import StatsBox from '../../components/StatsBox/StatsBox'
+import TeamButton from '../../components/SideButton/TeamButton/TeamButton'
 import LiveScoreBox from '../../components/LiveScoresBox/LiveScoresBox'
 
 const axios = require('axios');
@@ -18,7 +18,7 @@ class Frame extends Component {
         <div className="side-buttons">
           <div className="buttons-container">
             {this.liveGamesAndScoresButtonHandler()}
-            {this.showTeamsButtonsHandler()}
+            {this.showSideButtonsHandler()}
           </div>
         </div>
         <div className="bottom-frame">
@@ -34,8 +34,9 @@ class Frame extends Component {
   }
 
   liveGamesAndScoresButtonHandler = () => {
-    return this.props.state.isLiveGamesOpen ? <LiveScoreBox
-      updatedPresentedMatch = {(leagueId, matchId) => this.updatedPresentedMatchHandler(leagueId, matchId)} /> : <SideButton val={'live'} label={'Live games'} action={() => this.fetchLiveGames()} />;
+    return this.props.state.isLiveGamesOpen ?
+      <LiveScoreBox updatedPresentedMatch = {(leagueId, matchId) => this.updatedPresentedMatchHandler(leagueId, matchId)} /> :
+      <SideButton label={'Live games'} action={() => this.fetchLiveGames()} />;
   }
 
   updatedPresentedMatchHandler = (matchId, leagueId) => {
@@ -45,15 +46,25 @@ class Frame extends Component {
   updateSelectedTeamHandler = (val) => {
     this.props.setPresentedTeamHandler(val);
   }
-  showTeamsButtonsHandler = () => {
-    return this.props.state.homeTeam.name && this.props.state.awayTeam.name ?
-      (<div><SideButton action={() => this.updateSelectedTeamHandler('home')} label={this.props.state.homeTeam.name} img={this.props.state.homeTeam.logo_path} />
-        <SideButton action={() => this.updateSelectedTeamHandler('away')} label={this.props.state.awayTeam.name} img={this.props.state.awayTeam.logo_path} />
+
+  showMatchStatsHandler = () => {
+    this.props.setStatsViewHandler();
+  }
+
+  showSideButtonsHandler = () => {
+    let stats = this.props.state.stats.id ? <SideButton action={() => this.showMatchStatsHandler()} label={'stats'} /> : ''
+    return  this.props.state.homeTeam.name && this.props.state.awayTeam.name ?
+      (<div className="teams-buttons-container">
+        <TeamButton action={() => this.updateSelectedTeamHandler('home')} label={this.props.state.homeTeam.short_code} img={this.props.state.homeTeam.logo_path} />
+        <TeamButton action={() => this.updateSelectedTeamHandler('away')} label={this.props.state.awayTeam.short_code} img={this.props.state.awayTeam.logo_path} />
+        {stats}
       </div>): ''
   }
+
   showTeamLineupHandler = () => {
     return this.props.state.selectedTeam.lineup ? <TeamLineup presentedTeam={this.props.state.selectedTeam}/>: '';
   }
+
 }
 
 const mapStateToProps = state => {
@@ -83,6 +94,12 @@ const mapDispatchToProps = dispatch => {
       dispatch({
         type: 'SET_PRESENTED_TEAM',
         val: val
+      });
+    },
+    setStatsViewHandler: () => {
+      dispatch({
+        type: 'OPEN_MODAL',
+        stats: true
       });
     },
   };

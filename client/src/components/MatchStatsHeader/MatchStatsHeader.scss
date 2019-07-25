@@ -1,0 +1,18 @@
+.main-stats {
+  .main-stats-container {
+    display: flex;
+    justify-content: space-around;
+    .team-name {
+      text-align: center;
+    }
+    .team-logo {
+      img {
+        height: 8em;
+        width:  8em;
+      }
+    }
+    .score {
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.modal-body {
+  .player-info {
+    .info-container{
+      background: lightblue;
+      border-radius: .3em;
+      padding: .3em;
+      display: flex;
+      justify-content: space-between;
+      -webkit-box-shadow: 5px 5px 21px -9px rgba(0,0,0,0.75);
+      -moz-box-shadow: 5px 5px 21px -9px rgba(0,0,0,0.75);
+      box-shadow: 5px 5px 21px -9px rgba(0,0,0,0.75);
+      .general-info {
+        .player-name {
+
+        }
+        .player-position {
+
+        }
+        .player-team {
+          background: #1564ad;
+          color: white;
+          font-size: .75em;
+          font-weight: bold;
+          border-radius: .2em;
+          text-align: center;
+        }
+      }
+      .image-container {
+        margin-right: .3em;
+        img {
+          height: 5em;
+          width: 5em;
+        }
+      }
+    }
+  }
+  .match-stats {
+    margin-top: .5em;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: .5em;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .season-stats {
+    margin-top: .5em;
+    background: lightgreen;
+  }
+}

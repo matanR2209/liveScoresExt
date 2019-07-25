@@ -3,6 +3,10 @@
     position: absolute;
     top: 15%
   }
+  .teams-buttons-container {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .bottom-frame {
