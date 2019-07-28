@@ -4,7 +4,6 @@ import StatRow from './StatRow/StatRow'
 const _ = require('lodash');
 
 const MatchStats = (props) => {
-  console.log()
   let statsCollection = [
     {
       jsonValLocation: 'shots.total',

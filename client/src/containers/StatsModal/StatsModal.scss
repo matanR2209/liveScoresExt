@@ -1,8 +1,25 @@
+.modal-header {
+  flex-direction: column;
+  .modal-title {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: .3em;
+  }
+}
+.nav-container {
+  margin: 1em 0;
+  display: flex;
+  justify-content: center;
+}
 .modal-body {
   .stats-header {
 
   }
   .stats-body {
-    margin-top: .3em;
+    .lineups-container {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }

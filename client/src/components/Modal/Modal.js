@@ -12,7 +12,7 @@ class GeneralModal extends Component {
     let selectedModal = '';
     switch (this.props.state.modalContent) {
       case 'player': {
-        selectedModal = <Modal show={this.props.state.isModalOpen}>
+        selectedModal = <Modal c show={this.props.state.isModalOpen}>
           <PlayerModal selectedPlayer={this.props.state.selectedPlayer} closeModal={()=> this.props.closeModalHandler()}/>
         </Modal>;
           break;

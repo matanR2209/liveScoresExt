@@ -8,10 +8,20 @@
   color: black;
   font-weight: bold;
   cursor: pointer;
+  .player-name {
+      padding: .2em;
+      border-bottom: 1px solid lightgray;
+  }
   .player-image {
     img {
       height: 3em;
       width: 3em;
     }
+  }
+}
+
+.player-container-row {
+  padding: .5em .2em;
+  .player-name {
   }
 }

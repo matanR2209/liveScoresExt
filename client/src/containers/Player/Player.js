@@ -39,22 +39,30 @@ class Player extends Component {
     );
   }
   render() {
-    return (
-      <div className="player-container" onClick={() => this.props.presentPlayerHandler(this.props.player)} >
-        <div className="player-image">
-          <img src={"https://cdn.sportmonks.com/images/soccer/players/1/455361.png"}></img>
-        </div>
-        <div className="playerName">
+    if(this.props.isStatsModal) {
+      return <div className="player-container-row">
+        <div className="player-name">
           {this.props.player.number}. {this.props.player.player_name}
         </div>
-        <div className="player-stats">
-          <div className="top-row">
-            <label>Minutes played: {this.props.player.stats.other.minutes_played} </label>
-          </div>
-          {this.playerSecondaryStats()}
-        </div>
       </div>
-    );
+    } else {
+      return (
+        <div className="player-container" onClick={() => this.props.presentPlayerHandler(this.props.player)} >
+          <div className="player-image">
+            <img src={"https://cdn.sportmonks.com/images/soccer/players/1/455361.png"}></img>
+          </div>
+          <div className="player-name">
+            {this.props.player.number}. {this.props.player.player_name}
+          </div>
+          <div className="player-stats">
+            <div className="top-row">
+              <label>Minutes played: {this.props.player.stats.other.minutes_played} </label>
+            </div>
+            {this.playerSecondaryStats()}
+          </div>
+        </div>
+      );
+    }
   }
 }
 
