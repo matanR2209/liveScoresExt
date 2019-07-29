@@ -1,4 +1,7 @@
+@import "../../../styles/styles";
+
 .team-side-button {
+  @extend .gradient-purple;
   margin-top: .3em;
   max-width: 6em;
   img {

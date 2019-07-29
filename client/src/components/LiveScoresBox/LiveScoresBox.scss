@@ -2,7 +2,6 @@
 
 .live-games-container {
   @extend .gradient-green;
-  font-weight: bold;
   border: 1px solid $col-dark-grey;
   padding: .3em;
   display: flex;
@@ -12,8 +11,7 @@
   .games-table-container {
     padding: .3em;
     .league-name {
-      background: rgb(150,60,255);
-      background: linear-gradient(31deg, rgba(150,60,255,1) 9%, rgba(132,53,222,1) 20%, rgba(138,55,233,1) 78%, rgba(50,20,67,1) 100%);
+      @extend .gradient-purple;
       td {
         border-radius: 5px;
         padding:.3em;
@@ -29,6 +27,7 @@
     }
   }
   .stats-close {
+    height: 2em;
     font-weight: bold;
     cursor: pointer;
   }
