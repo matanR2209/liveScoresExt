@@ -72,8 +72,8 @@ const initialState = {
     }
   },
   bottomVisibility: '',
-  modalContent: '',
-  isModalOpen: false,
+  modalContent: 'player',
+  isModalOpen: true,
   isLiveGamesOpen: false,
   liveGames: [],
   statsModal: {
@@ -92,6 +92,19 @@ const initialState = {
       },
     ],
     selectedTab: {value: 'stats'}
+  },
+  playerModal: {
+    tabs: [
+      {
+        value: 'season',
+        label: 'Season'
+      },
+      {
+        value: 'history',
+        label: 'History'
+      },
+    ],
+    selectedTab: {value: 'season'}
   }
 };
 
@@ -148,6 +161,12 @@ const reducer = (state = initialState, action) => {
     case 'SET_TABS_CONTENT': {
       const newState = Object.assign({}, state);
       newState.statsModal.selectedTab.value = action.value;
+      return newState;
+    }
+
+    case 'UPDATE_PLAYER_MODAL': {
+      const newState = Object.assign({}, state);
+      newState.playerModal.selectedTab.value = action.value;
       return newState;
     }
     default: {

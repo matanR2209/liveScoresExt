@@ -1,0 +1,30 @@
+@import "variables";
+
+.player-container-box-shadow {
+  -webkit-box-shadow: 5px 5px 21px -9px rgba(0,0,0,0.75);
+  -moz-box-shadow: 5px 5px 21px -9px rgba(0,0,0,0.75);
+  box-shadow: 5px 5px 21px -9px rgba(0,0,0,0.75);
+}
+
+.medium-font {
+  font-weight: bold;
+  font-size: 1.15em;
+}
+
+.small-font {
+  font-size: .75em;
+  font-weight: bold;
+}
+
+.nav-wrapper {
+  border: 2px solid $col-light-purple !important;
+  border-radius: 3px;
+}
+.nav-item {
+  color: $col-dark-grey;
+  border-radius: 0 !important;
+}
+.nav-item-active {
+  background: $col-light-purple !important;
+  color: white ;
+}

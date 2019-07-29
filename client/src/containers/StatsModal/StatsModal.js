@@ -38,7 +38,7 @@ class StatsModal extends Component {
     const tabs = this.props.state.statsModal.tabs.map((tempTab, index) => {
       let isActive = tempTab.value === this.props.state.statsModal.selectedTab.value;
       return <Nav.Item key={index}>
-        <Nav.Link active={isActive} onSelect={() =>  this.props.setTabValueHandler(tempTab.value)} eventKey={index}>{tempTab.label}</Nav.Link>
+        <Nav.Link active={isActive} onSelect={() => this.props.setTabValueHandler(tempTab.value)} eventKey={index}>{tempTab.label}</Nav.Link>
       </Nav.Item>
     });
     return (

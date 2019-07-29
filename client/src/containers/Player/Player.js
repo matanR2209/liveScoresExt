@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import './Player.scss';
-import soccer_avatar from '../../assets/images/soccer_avatar.png';
+
 import connect from 'react-redux/es/connect/connect'
 
 

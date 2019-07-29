@@ -1,26 +1,29 @@
-.modal-body {
+@import "../../../styles/styles";
+
+.modal-header {
+  .modal-title {
+    display: flex;
+    flex-direction: row;
+  }
   .player-info {
+    width: 100%;
+    background: $col-dark-purple url('../../../assets/images/player_bg.svg') no-repeat right top -66px;
     .info-container{
-      background: lightblue;
-      border-radius: .3em;
-      padding: .3em;
+      @extend .player-container-box-shadow;
       display: flex;
       justify-content: space-between;
-      -webkit-box-shadow: 5px 5px 21px -9px rgba(0,0,0,0.75);
-      -moz-box-shadow: 5px 5px 21px -9px rgba(0,0,0,0.75);
-      box-shadow: 5px 5px 21px -9px rgba(0,0,0,0.75);
+      border-radius: .3em;
+      padding: .7em;
       .general-info {
-        .player-name {
-
-        }
-        .player-position {
-
-        }
+        display: flex;
+        flex-direction: column;
+        color: $col-white;
+        @extend .medium-font;
         .player-team {
-          background: #1564ad;
-          color: white;
-          font-size: .75em;
-          font-weight: bold;
+          @extend .small-font;
+          margin: .3em 0;
+          background: $col-turquoise;
+          color: $col-dark-purple;
           border-radius: .2em;
           text-align: center;
         }
@@ -30,21 +33,37 @@
         img {
           height: 5em;
           width: 5em;
+          border-radius: 5px;
         }
       }
     }
   }
+}
+.modal-body {
   .match-stats {
+    background: $col-light-green;
     margin-top: .5em;
-    border: 1px solid lightgray;
     border-radius: 5px;
     padding: .5em;
     display: flex;
     justify-content: space-between;
     text-align: center;
+    color: $col-dark-purple;
   }
-  .season-stats {
-    margin-top: .5em;
-    background: lightgreen;
+  .tabs-container {
+    margin: 1em 0;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    .nav {
+      @extend .nav-wrapper;
+    }
+    .nav-pills .nav-link {
+      @extend .nav-item;
+    }
+    .nav-pills .nav-link.active {
+      @extend .nav-item-active;
+    }
   }
 }
+

@@ -12,16 +12,20 @@ class GeneralModal extends Component {
     let selectedModal = '';
     switch (this.props.state.modalContent) {
       case 'player': {
-        selectedModal = <Modal c show={this.props.state.isModalOpen}>
-          <PlayerModal selectedPlayer={this.props.state.selectedPlayer} closeModal={()=> this.props.closeModalHandler()}/>
+        selectedModal = <Modal show={this.props.state.isModalOpen}>
+          <PlayerModal tabs={this.props.state.playerModal.tabs}
+                       activeTab={this.props.state.playerModal.selectedTab.value}
+                       selectedPlayer={this.props.state.selectedPlayer}
+                       updatePlayerTab={(selectedTab)=>this.props.updatePlayerModalContentHandler(selectedTab)}
+                       closeModal={()=> this.props.closeModalHandler()}/>
         </Modal>;
-          break;
+        break;
       }
       case 'stats': {
         selectedModal = <Modal show={this.props.state.isModalOpen}>
           <StatsModal closeModal={()=> this.props.closeModalHandler()}/>
         </Modal>;
-          break;
+        break;
       }
     }
     return selectedModal;
@@ -37,11 +41,17 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    closeModalHandler :  () => {
+    closeModalHandler: () => {
       dispatch({
         type: 'CLOSE_MODAL'
       });
     },
+    updatePlayerModalContentHandler: (selectedTab) => {
+      dispatch({
+        type: 'UPDATE_PLAYER_MODAL',
+        value: selectedTab
+      });
+    }
   }
 }
 
