@@ -1,11 +1,10 @@
 @import "../../styles/styles";
 
 .side-button {
+    @extend .gradient-green;
     display: flex;
     justify-content: space-around;
     margin-top: .3em;
-    background: $col-dark-green;
-    color: $col-white;
     text-align: center;
     border-radius:5px;
     cursor:pointer;

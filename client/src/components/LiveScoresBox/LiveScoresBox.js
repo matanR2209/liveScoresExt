@@ -23,8 +23,10 @@ const LiveScoreBox = (props) => {
   const liveGames = setLiveGamesByLeague;
   return (
     <div className="live-games-container">
-      <table><tbody>{liveGames}</tbody></table>
-      {/*<div className="close" onClick={() => props.updateLiveGamesHandler()} >X</div>*/}
+      <div className="games-table-container">
+        <table><tbody>{liveGames}</tbody></table>
+      </div>
+      <div className="stats-close" onClick={() => props.updateLiveGamesHandler()} >X</div>
     </div>
   );
 }
@@ -37,7 +39,13 @@ const mapStateToProps = state => {
 }
 
 const mapDispatchToProps = dispatch => {
-  return {}
+  return {
+    updateLiveGamesHandler :  () => {
+      dispatch({
+        type: 'CLOSE_LIVE_GAMES'
+      });
+    },
+  };
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(LiveScoreBox);

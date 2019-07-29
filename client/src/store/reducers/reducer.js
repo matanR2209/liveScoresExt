@@ -169,6 +169,11 @@ const reducer = (state = initialState, action) => {
       newState.playerModal.selectedTab.value = action.value;
       return newState;
     }
+    case 'CLOSE_LIVE_GAMES': {
+      const newState = Object.assign({}, state);
+      newState.isLiveGamesOpen = false;
+      return newState;
+    }
     default: {
       return state;
     }

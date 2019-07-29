@@ -6,6 +6,12 @@
   box-shadow: 5px 5px 21px -9px rgba(0,0,0,0.75);
 }
 
+.gradient-green {
+  color: $col-white;
+  background: rgb(34,137,78);
+  background: linear-gradient(304deg, $col-dark-green 4%, $col-light-green 100%);
+}
+
 .medium-font {
   font-weight: bold;
   font-size: 1.15em;

@@ -1,40 +1,35 @@
 @import "../../styles/styles";
 
 .live-games-container {
-  color: $col-white;
+  @extend .gradient-green;
   font-weight: bold;
   border: 1px solid $col-dark-grey;
-  padding: 1em;
+  padding: .3em;
   display: flex;
-  flex-direction: column-reverse;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  background: rgb(34,137,78);
-  background: linear-gradient(304deg, $col-dark-green 4%, $col-light-green 100%);
   margin-bottom: .3em;
-  .league-name {
-    background: rgb(150,60,255);
-    background: linear-gradient(31deg, rgba(150,60,255,1) 9%, rgba(132,53,222,1) 20%, rgba(138,55,233,1) 78%, rgba(50,20,67,1) 100%);
-    td {
-      border-radius: 5px;
-      padding:.3em;
+  .games-table-container {
+    padding: .3em;
+    .league-name {
+      background: rgb(150,60,255);
+      background: linear-gradient(31deg, rgba(150,60,255,1) 9%, rgba(132,53,222,1) 20%, rgba(138,55,233,1) 78%, rgba(50,20,67,1) 100%);
+      td {
+        border-radius: 5px;
+        padding:.3em;
+      }
+    }
+    .match-row {
+      td {
+        padding: 5px;
+      }
+      .team-name, .info {
+        cursor: pointer;
+      }
     }
   }
-  .match-row {
-    td {
-      padding: 5px;
-    }
-    .team-name, .info {
-      cursor: pointer;
-    }
-  }
-
-
-  .close {
-    display: flex;
-    justify-content: flex-end;
+  .stats-close {
     font-weight: bold;
-    margin-bottom: .2em;
     cursor: pointer;
   }
 }
