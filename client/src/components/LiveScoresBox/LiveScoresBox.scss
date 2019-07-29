@@ -1,30 +1,30 @@
+@import "../../styles/styles";
+
 .live-games-container {
-  border: 1px solid darkgray;
+  color: $col-white;
+  font-weight: bold;
+  border: 1px solid $col-dark-grey;
   padding: 1em;
   display: flex;
   flex-direction: column-reverse;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  background: rgb(235,241,246); /* Old browsers */
-  background: -moz-linear-gradient(-45deg,  rgba(235,241,246,1) 0%, rgba(171,211,238,1) 75%, rgba(137,195,235,1) 100%, rgba(213,235,251,1) 100%, rgba(137,195,235,1) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg,  rgba(235,241,246,1) 0%,rgba(171,211,238,1) 75%,rgba(137,195,235,1) 100%,rgba(213,235,251,1) 100%,rgba(137,195,235,1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg,  rgba(235,241,246,1) 0%,rgba(171,211,238,1) 75%,rgba(137,195,235,1) 100%,rgba(213,235,251,1) 100%,rgba(137,195,235,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf1f6', endColorstr='#89c3eb',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background: rgb(34,137,78);
+  background: linear-gradient(304deg, $col-dark-green 4%, $col-light-green 100%);
   margin-bottom: .3em;
   .league-name {
-    font-weight: bold;
-    color: white;
-    background: rgb(59,103,158); /* Old browsers */
-    background: -moz-linear-gradient(-45deg,  rgba(59,103,158,1) 0%, rgba(43,136,217,1) 50%, rgba(32,124,202,1) 92%, rgba(125,185,232,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg,  rgba(59,103,158,1) 0%,rgba(43,136,217,1) 50%,rgba(32,124,202,1) 92%,rgba(125,185,232,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg,  rgba(59,103,158,1) 0%,rgba(43,136,217,1) 50%,rgba(32,124,202,1) 92%,rgba(125,185,232,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b679e', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background: rgb(150,60,255);
+    background: linear-gradient(31deg, rgba(150,60,255,1) 9%, rgba(132,53,222,1) 20%, rgba(138,55,233,1) 78%, rgba(50,20,67,1) 100%);
+    td {
+      border-radius: 5px;
+      padding:.3em;
+    }
   }
   .match-row {
     td {
       padding: 5px;
     }
-    .teamName, .info {
+    .team-name, .info {
       cursor: pointer;
     }
   }

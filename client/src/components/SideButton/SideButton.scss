@@ -1,24 +1,18 @@
+@import "../../styles/styles";
+
 .side-button {
-    -moz-box-shadow: 3px 4px 0 0 #1564ad;
-    -webkit-box-shadow: 3px 4px 0 0 #1564ad;
-    box-shadow: 3px 4px 0 0 #1564ad;
-    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #378de5));
-    background:-moz-linear-gradient(top, #79bbff 5%, #378de5 100%);
-    background:-webkit-linear-gradient(top, #79bbff 5%, #378de5 100%);
-    background:-o-linear-gradient(top, #79bbff 5%, #378de5 100%);
-    background:-ms-linear-gradient(top, #79bbff 5%, #378de5 100%);
-    background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#378de5',GradientType=0);
+    display: flex;
+    justify-content: space-around;
+    margin-top: .3em;
+    background: $col-dark-green;
+    color: $col-white;
+    text-align: center;
     border-radius:5px;
-    border:1px solid #337bc4;
-    display:inline-block;
     cursor:pointer;
-    color:#ffffff;
     font-weight:bold;
-    text-shadow:0 1px 0 #528ecc;
     margin-bottom: .5em;
-    margin-left: -1em;
-    padding: 1em;
+    margin-left: -.2em;
+    padding: .4em;
     max-width: 8em;
     img {
         height: 8em;

@@ -72,8 +72,8 @@ const initialState = {
     }
   },
   bottomVisibility: '',
-  modalContent: 'player',
-  isModalOpen: true,
+  modalContent: '',
+  isModalOpen: false,
   isLiveGamesOpen: false,
   liveGames: [],
   statsModal: {
