@@ -1,7 +1,7 @@
 import React from 'react';
 import './MatchRow.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faInfoCircle } from '@fortawesome/free-solid-svg-icons'
+import { FaInfoCircle } from 'react-icons/fa';
+
 
 const MatchRow = (props) => {
   return (
@@ -12,7 +12,7 @@ const MatchRow = (props) => {
       <td>{props.awayTeamScore}</td>
       <td className="team-name">{props.awayTeamName}</td>
       <td className="info" onClick={() => props.selectPresentedMatch(props.leagueId, props.matchDataId)} >
-        <FontAwesomeIcon icon={faInfoCircle} />
+        <FaInfoCircle/>
       </td>
     </tr>
   );
