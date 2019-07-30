@@ -9,6 +9,7 @@ import TeamButton from '../../components/SideButton/TeamButton/TeamButton'
 import LiveScoreBox from '../../components/LiveScoresBox/LiveScoresBox'
 
 const axios = require('axios');
+const ACTIONS = require('../../store/actionTypes');
 
 
 class Frame extends Component {
@@ -34,7 +35,7 @@ class Frame extends Component {
   }
 
   liveGamesAndScoresButtonHandler = () => {
-    return this.props.state.isLiveGamesOpen ?
+    return this.props.statsReducer.isLiveGamesOpen ?
       <LiveScoreBox updatedPresentedMatch = {(leagueId, matchId) => this.updatedPresentedMatchHandler(leagueId, matchId)} /> :
       <SideButton label={'Live games'} action={() => this.fetchLiveGames()} />;
   }
@@ -52,24 +53,25 @@ class Frame extends Component {
   }
 
   showSideButtonsHandler = () => {
-    let stats = this.props.state.stats.id ? <SideButton action={() => this.showMatchStatsHandler()} label={'stats'} /> : ''
-    return  this.props.state.homeTeam.name && this.props.state.awayTeam.name ?
+    let stats = this.props.statsReducer.stats.id ? <SideButton action={() => this.showMatchStatsHandler()} label={'stats'} /> : ''
+    return  this.props.statsReducer.homeTeam.name && this.props.statsReducer.awayTeam.name ?
       (<div className="teams-buttons-container">
-        <TeamButton action={() => this.updateSelectedTeamHandler('home')} label={this.props.state.homeTeam.short_code} img={this.props.state.homeTeam.logo_path} />
-        <TeamButton action={() => this.updateSelectedTeamHandler('away')} label={this.props.state.awayTeam.short_code} img={this.props.state.awayTeam.logo_path} />
+        <TeamButton action={() => this.updateSelectedTeamHandler('home')} label={this.props.statsReducer.homeTeam.short_code} img={this.props.statsReducer.homeTeam.logo_path} />
+        <TeamButton action={() => this.updateSelectedTeamHandler('away')} label={this.props.statsReducer.awayTeam.short_code} img={this.props.statsReducer.awayTeam.logo_path} />
         {stats}
       </div>): ''
   }
 
   showTeamLineupHandler = () => {
-    return this.props.state.selectedTeam.lineup ? <TeamLineup presentedTeam={this.props.state.selectedTeam}/>: '';
+    return this.props.statsReducer.selectedTeam.lineup ? <TeamLineup presentedTeam={this.props.statsReducer.selectedTeam}/>: '';
   }
 
 }
 
 const mapStateToProps = state => {
   return {
-    state: state,
+    statsReducer: state.statsReducer,
+    modalReducer: state.modalReducer
   }
 }
 
@@ -77,13 +79,13 @@ const mapDispatchToProps = dispatch => {
   return {
     getLiveGamesHandler :  (response) => {
       dispatch({
-        type: 'GET_LIVE_GAMES',
+        type: ACTIONS.GET_LIVE_GAMES,
         response: response.data
       });
     },
     getMatchInfoHandler: (leagueId, matchId) => {
       dispatch({
-        type: 'GET_GAME_DATA',
+        type: ACTIONS.GET_GAME_DATA,
         data: {
           leagueId: leagueId,
           matchId: matchId
@@ -92,13 +94,13 @@ const mapDispatchToProps = dispatch => {
     },
     setPresentedTeamHandler: (val) => {
       dispatch({
-        type: 'SET_PRESENTED_TEAM',
+        type: ACTIONS.SET_PRESENTED_TEAM,
         val: val
       });
     },
     setStatsViewHandler: () => {
       dispatch({
-        type: 'OPEN_MODAL',
+        type: ACTIONS.OPEN_MODAL,
         stats: true
       });
     },

@@ -6,6 +6,8 @@ import './Modal.scss';
 import PlayerModal from './PlayerModal/PlayerModal'
 import StatsModal from '../../containers/StatsModal/StatsModal'
 
+const ACTIONS = require('../../store/actionTypes');
+
 
 class GeneralModal extends Component {
   render() {
@@ -35,7 +37,7 @@ class GeneralModal extends Component {
 
 const mapStateToProps = state => {
   return {
-    state: state,
+    state: state.generalModalControl,
   }
 }
 
@@ -43,12 +45,12 @@ const mapDispatchToProps = dispatch => {
   return {
     closeModalHandler: () => {
       dispatch({
-        type: 'CLOSE_MODAL'
+        type: ACTIONS.CLOSE_MODAL
       });
     },
     updatePlayerModalContentHandler: (selectedTab) => {
       dispatch({
-        type: 'UPDATE_PLAYER_MODAL',
+        type: ACTIONS.SET_PLAYER_TABS_CONTENT,
         value: selectedTab
       });
     }

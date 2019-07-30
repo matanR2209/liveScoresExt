@@ -2,41 +2,45 @@ import React, { Component, Fragment } from 'react'
 import './StatsModal.scss';
 import Nav from 'react-bootstrap/Nav';
 
+import connect from 'react-redux/es/connect/connect'
 import MatchStats from '../../components/MatchStats/MatchStats';
 import MatchStatsHeader from '../../components/MatchStatsHeader/MatchStatsHeader';
-import connect from 'react-redux/es/connect/connect'
 import TeamLineup from '../../components/TeamLineup/TeamLineup'
 import Timeline from '../../components/Timeline/Timeline'
 
+const ACTIONS = require('../../store/actionTypes');
+
+
 class StatsModal extends Component {
   setContent = () => {
-    switch (this.props.state.statsModal.selectedTab.value) {
+    const statsControl = this.props.statsControl;
+    switch (this.props.modalState.statsModal.selectedTab.value) {
       case 'stats': {
-        return   <MatchStats homeTeam={this.props.state.stats.localTeam.data.id}
-                             awayTeam={this.props.state.stats.visitorTeam.data.id}
-                             stats={this.props.state.stats}/>
+        return   <MatchStats homeTeam={statsControl.stats.localTeam.data.id}
+                             awayTeam={statsControl.stats.visitorTeam.data.id}
+                             stats={statsControl.stats}/>
       }
 
       case 'lineups': {
         return <div className="lineups-container">
           <div className="lineup">
-            <TeamLineup presentedTeam={this.props.state.homeTeam} isStatsModal={true}/>
+            <TeamLineup presentedTeam={statsControl.homeTeam} isStatsModal={true}/>
           </div>
           <div className="lineup">
-            <TeamLineup presentedTeam={this.props.state.awayTeam} isStatsModal={true}/>
+            <TeamLineup presentedTeam={statsControl.awayTeam} isStatsModal={true}/>
           </div>
         </div>
       }
       case 'timeline': {
-        return <Timeline events={this.props.state.stats.comments.data}/>
+        return <Timeline events={statsControl.stats.comments.data}/>
       }
     }
   }
   render() {
-    console.log(this.props.state);
     const content = this.setContent();
-    const tabs = this.props.state.statsModal.tabs.map((tempTab, index) => {
-      let isActive = tempTab.value === this.props.state.statsModal.selectedTab.value;
+    const statsMdal = this.props.modalState.statsModal;
+    const tabs = statsMdal.tabs.map((tempTab, index) => {
+      let isActive = tempTab.value === statsMdal.selectedTab.value;
       return <Nav.Item key={index}>
         <Nav.Link active={isActive} onSelect={() => this.props.setTabValueHandler(tempTab.value)} eventKey={index}>{tempTab.label}</Nav.Link>
       </Nav.Item>
@@ -49,7 +53,7 @@ class StatsModal extends Component {
             <button onClick= {this.props.closeModal}> X</button>
           </div>
           <div className="stats-header">
-            <MatchStatsHeader stats={this.props.state.stats}/>
+            <MatchStatsHeader stats={this.props.statsControl.stats}/>
           </div>
         </div>
         <div className="nav-container">
@@ -71,7 +75,8 @@ class StatsModal extends Component {
 
 const mapStateToProps = state => {
   return {
-    state: state,
+    modalState: state.generalModalControl,
+    statsControl: state.statsReducer
   }
 }
 
@@ -79,7 +84,7 @@ const mapDispatchToProps = dispatch => {
   return {
     setTabValueHandler :  (val) => {
       dispatch({
-        type: 'SET_TABS_CONTENT',
+        type: ACTIONS.SET_STATS_TABS_CONTENT,
         value: val
       });
     },

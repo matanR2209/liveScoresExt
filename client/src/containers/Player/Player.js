@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import './Player.scss';
-
 import connect from 'react-redux/es/connect/connect'
+const ACTIONS = require('../../store/actionTypes');
 
 
 class Player extends Component {
@@ -40,7 +40,7 @@ const mapDispatchToProps = dispatch => {
   return {
     presentPlayerHandler :  (player) => {
       dispatch({
-        type: 'OPEN_MODAL',
+        type: ACTIONS.OPEN_MODAL,
         player: player
       });
     },

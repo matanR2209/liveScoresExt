@@ -3,6 +3,8 @@ import './LiveScoresBox.scss';
 import connect from 'react-redux/es/connect/connect'
 import MatchRow from './MatchRow/MatchRow'
 
+const ACTIONS = require('../../store/actionTypes');
+
 const LiveScoreBox = (props) => {
   const setLiveGamesByLeague = props.state.liveGames.map((league, leagueIndex) => {
       let games = league.matches.map((match, matchIndex) => {
@@ -30,7 +32,7 @@ const LiveScoreBox = (props) => {
 
 const mapStateToProps = state => {
   return {
-    state: state,
+    state: state.liveMatches,
   }
 }
 
@@ -38,7 +40,7 @@ const mapDispatchToProps = dispatch => {
   return {
     updateLiveGamesHandler :  () => {
       dispatch({
-        type: 'CLOSE_LIVE_GAMES'
+        type: ACTIONS.CLOSE_LIVE_GAMES
       });
     },
   };
