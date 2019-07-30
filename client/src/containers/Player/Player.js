@@ -5,39 +5,6 @@ import connect from 'react-redux/es/connect/connect'
 
 
 class Player extends Component {
-  playerSecondaryStats = () => {
-    let firstState = '';
-    let secState = '';
-    const player = this.props.player;
-    switch (player.position) {
-      case 'G': {
-        firstState = `Saves: ${player.stats.other.saves}`;
-        secState = `Clearances: ${player.stats.other.clearances}`
-        break;
-      }
-      case 'D': {
-        firstState = `Duals: ${player.stats.duels.won}/${player.stats.duels.total}`;
-        secState = `Tackles: ${player.stats.other.tackles}`
-        break;
-      }
-      case 'M': {
-        firstState = `Passes: ${player.stats.passing.passes}`
-        secState = `passing accuracy: ${player.stats.passing.passes} %`
-        break;
-      }
-      case 'F': {
-        firstState = `Shots on target: ${player.stats.shots.shots_on_goal}/${player.stats.shots.shots_total}`
-        secState = `dribbles: ${player.stats.dribbles.success}/${player.stats.dribbles.attempts}`
-        break;
-      }
-    }
-    return (
-      <div className="bottom-row">
-        <div>{firstState} </div>
-        <div>{secState}</div>
-      </div>
-    );
-  }
   render() {
     if(this.props.isStatsModal) {
       return <div className="player-container-row">
@@ -55,10 +22,7 @@ class Player extends Component {
             {this.props.player.number}. {this.props.player.player_name}
           </div>
           <div className="player-stats">
-            <div className="top-row">
-              <label>Minutes played: {this.props.player.stats.other.minutes_played} </label>
-            </div>
-            {this.playerSecondaryStats()}
+            <label>Minutes played: {this.props.player.stats.other.minutes_played} </label>
           </div>
         </div>
       );
