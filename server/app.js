@@ -29,7 +29,7 @@ app.get('/teams/:teamId', (req, res) => {
   teamController.getTeam(req, res);
 })
 
-app.get('/player/:playerId', (req, res) => {
+app.get('/players/:playerId', (req, res) => {
   playerController.getPlayerExtendedData(req, res);
 });
 

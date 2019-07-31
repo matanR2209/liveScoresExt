@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import './PlayerModal.scss';
 import PlayerStatBox from './PlayerStatBox/PlayerStatBox'
 import Nav from 'react-bootstrap/Nav'
+import PlayerHistoryStats from './PlayerHistoryStats/PlayerHistoryStats'
 const _ = require('lodash');
 
 
@@ -51,7 +52,7 @@ const PlayerModal = (props) => {
         return <div>Season stats</div>
       }
       case 'history': {
-        return <div>History stats</div>
+        return <PlayerHistoryStats/>
       }
     }
   }
@@ -76,12 +77,11 @@ const PlayerModal = (props) => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="modal-body">
         <div className="match-stats">
           {statsRowCollection}
         </div>
-
+      </div>
+      <div className="modal-body">
         <div className="tabs-container">
           <Nav variant="pills">
             {tabs}
@@ -96,5 +96,4 @@ const PlayerModal = (props) => {
 
   );
 }
-
 export default PlayerModal;

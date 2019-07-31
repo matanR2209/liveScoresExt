@@ -1,0 +1,20 @@
+.stats-table {
+  width: 100%;
+  text-align: center;
+  tr {
+    th {
+      font-size: .8em;
+      background-color: #efefef;
+      padding: .3em;
+    }
+  }
+  tbody {
+    tr{
+      td{
+        border-bottom: 1px solid rgb(239, 239, 239);
+        font-size: .8em;
+        padding: .3em;
+      }
+    }
+  }
+}

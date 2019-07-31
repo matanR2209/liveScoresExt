@@ -1,12 +1,13 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux'
-
 import './Frame.scss';
 
 import SideButton from '../../components/SideButton/SideButton'
+
 import TeamLineup from '../../components/TeamLineup/TeamLineup'
 import TeamButton from '../../components/SideButton/TeamButton/TeamButton'
 import LiveScoreBox from '../../components/LiveScoresBox/LiveScoresBox'
+const _ = require('lodash');
 
 const axios = require('axios');
 const ACTIONS = require('../../store/actionTypes');
@@ -29,9 +30,11 @@ class Frame extends Component {
     )
   }
   fetchLiveGames = () => {
+    console.log('loading matches, show loader');
     axios.get("http://localhost:4000/liveMatches").then((response) => {
-      this.props.getLiveGamesHandler(response);
-    })
+      console.log('matches loaded, hide loader');
+      this.props.setLiveGamesHandler(response);
+    });
   }
 
   liveGamesAndScoresButtonHandler = () => {
@@ -40,8 +43,8 @@ class Frame extends Component {
       <SideButton label={'Live games'} action={() => this.fetchLiveGames()} />;
   }
 
-  updatedPresentedMatchHandler = (matchId, leagueId) => {
-    this.props.getMatchInfoHandler(matchId, leagueId);
+  updatedPresentedMatchHandler = (leagueId, matchId) => {
+    this.props.getMatchInfoHandler(leagueId, matchId);
   }
 
   updateSelectedTeamHandler = (val) => {
@@ -65,7 +68,6 @@ class Frame extends Component {
   showTeamLineupHandler = () => {
     return this.props.statsReducer.selectedTeam.lineup ? <TeamLineup presentedTeam={this.props.statsReducer.selectedTeam}/>: '';
   }
-
 }
 
 const mapStateToProps = state => {
@@ -77,7 +79,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    getLiveGamesHandler :  (response) => {
+    setLiveGamesHandler :  (response) => {
       dispatch({
         type: ACTIONS.GET_LIVE_GAMES,
         response: response.data

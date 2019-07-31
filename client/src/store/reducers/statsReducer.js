@@ -79,7 +79,8 @@ const reducer = (state = initialState, action) => {
   switch (action.type) {
     case ACTIONS.GET_GAME_DATA: return handleGameData(state, action);
     case ACTIONS.GET_LIVE_GAMES: return setLiveGames(state, action);
-    case ACTIONS.SET_PRESENTED_TEAM: return setPresentedTeam( state, action );
+    case ACTIONS.SET_PRESENTED_TEAM: return setPresentedTeam(state, action);
+    case ACTIONS.SET_PLAYER_DATA: return setSelectedPlayerExtendedData(state, action);
     default: return state;
   }
 }
@@ -114,6 +115,13 @@ const setPresentedTeam = (state, action) => {
   } else {
     newState.selectedTeam = state.awayTeam;
   }
+  return newState;
+}
+
+const setSelectedPlayerExtendedData = (state, action) => {
+  const newState = Object.assign({}, state);
+  newState.selectedPlayer.seasons = action.data;
+  console.log('player updated', newState.selectedPlayer);
   return newState;
 }
 
