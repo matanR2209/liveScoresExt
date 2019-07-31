@@ -2,7 +2,7 @@ const assert = require('chai').assert;
 
 const Config = require('../../env/Config');
 const Match = require('../../model/Match');
-const Tournament = require('../../model/Tournament');
+const Tournament = require('../../model/League');
 const PLAYED_GAME_FILE = Config.PLAYED_GAMES_FILE_NAME;
 const UPCOMING_GAME_FILE = Config.UPCOMING_GAMES_FILE_NAME;
 

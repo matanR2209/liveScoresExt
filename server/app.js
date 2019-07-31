@@ -1,11 +1,10 @@
 const express = require('express');
 const app = express();
 const fs = require('fs');
-const logger = require('morgan');
 const cors = require('cors')
 
 const Config = require('./env/Config');
-const routes = require('./routes/Routes');
+const logger = require('./utils/Logger')
 
 const matchesController = require('./controllers/matchesController');
 const teamController = require('./controllers/teamController');
@@ -14,9 +13,15 @@ const playerController = require('./controllers/playerController');
 app.use(cors())
 
 
-app.get('/liveMatches', (req, res) => {
+app.get('/liveMatches', (req, res, next) => {
     matchesController.getLiveMatches((matchesList) => {
       res.send(matchesList);
+      next()
+      if(res.statusCode === 200) {
+        logger.logResponse(req, JSON.stringify(matchesList));
+      }else {
+        console.log('error on response sending');
+      }
     });
 });
 
