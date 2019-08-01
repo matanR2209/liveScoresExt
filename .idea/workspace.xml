@@ -2,18 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b6bffb3-54e3-49d1-bc3a-a956aae4bca5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/Modal/PlayerModal/PlayerHistoryStats/PlayerHistoryStats.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/Modal/PlayerModal/PlayerHistoryStats/PlayerHistoryStats.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/content.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Modal/PlayerModal/PlayerModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Modal/PlayerModal/PlayerModal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Modal/PlayerModal/PlayerModal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Modal/PlayerModal/PlayerModal.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/containers/Frame/Frame.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/containers/Frame/Frame.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/containers/Player/Player.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/containers/Player/Player.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/store/actionTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/store/actionTypes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/store/reducers/statsReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/store/reducers/statsReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/playerController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/playerController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/logs/liveMatches_31.07.2019_logs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/server/logs/liveMatches_31.07.2019_logs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/test/model/Match.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/test/model/Team.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/test/model/Tournament.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/test/modelsTestsCollection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/test/testindData.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/test/utils/ConvertParamsToFilters.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/test/utils/DataReadingSpec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/test/utils/DataTramsforming.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/test/utils/Emitter.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/test/utils/FilteringHandlerSpec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/test/utils/ResponseHandler.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/test/utilsTestsCollection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/utils/DataReadingHandler.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,23 +34,23 @@
     <session id="720452694">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="17" />
+          <entry key="project.closed" value="19" />
           <entry key="project.open.time.0" value="6" />
-          <entry key="project.open.time.1" value="9" />
+          <entry key="project.open.time.1" value="11" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="18" />
+          <entry key="project.opened" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="6" />
+          <entry key="css" value="7" />
           <entry key="csv" value="3" />
-          <entry key="gitignore" value="3" />
+          <entry key="gitignore" value="4" />
           <entry key="html" value="4" />
-          <entry key="js" value="330" />
-          <entry key="json" value="30" />
+          <entry key="js" value="343" />
+          <entry key="json" value="34" />
           <entry key="md" value="1" />
           <entry key="png" value="1" />
           <entry key="scss" value="79" />
@@ -55,12 +61,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="6" />
+          <entry key="CSS" value="7" />
           <entry key="HTML" value="4" />
           <entry key="Image" value="1" />
-          <entry key="JSON" value="30" />
-          <entry key="JavaScript" value="330" />
-          <entry key="PLAIN_TEXT" value="18" />
+          <entry key="JSON" value="34" />
+          <entry key="JavaScript" value="343" />
+          <entry key="PLAIN_TEXT" value="19" />
           <entry key="SCSS" value="79" />
           <entry key="SVG" value="1" />
           <entry key="TypeScript" value="1" />
@@ -71,8 +77,8 @@
           <entry key="css" value="98" />
           <entry key="dummy" value="14" />
           <entry key="html" value="20" />
-          <entry key="js" value="31902" />
-          <entry key="json" value="95" />
+          <entry key="js" value="31921" />
+          <entry key="json" value="200" />
           <entry key="scss" value="3719" />
           <entry key="txt" value="2" />
         </counts>
@@ -81,8 +87,8 @@
         <counts>
           <entry key="CSS" value="98" />
           <entry key="HTML" value="20" />
-          <entry key="JSON" value="95" />
-          <entry key="JavaScript" value="31902" />
+          <entry key="JSON" value="200" />
+          <entry key="JavaScript" value="31921" />
           <entry key="PLAIN_TEXT" value="16" />
           <entry key="SCSS" value="3719" />
         </counts>
@@ -98,37 +104,35 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/components/Modal/PlayerModal/PlayerModal.js">
+        <entry file="file://$PROJECT_DIR$/server/controllers/matchesController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2">
-              <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-                <element signature="e#294#766#0" />
-              </folding>
+            <state relative-caret-position="-253">
+              <caret line="19" column="56" lean-forward="true" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/src/components/Modal/PlayerModal/PlayerHistoryStats/PlayerHistoryStats.js">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="45">
+              <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/components/Modal/PlayerModal/PlayerHistoryStats/PlayerHistoryStats.scss">
+        <entry file="file://$PROJECT_DIR$/server/controllers/playerController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+            <state relative-caret-position="225">
+              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/controllers/teamController.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -137,16 +141,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>mapStateToProps =</find>
-      <find>showTeamLineupHandler</find>
-      <find>'stats'</find>
       <find>OPEN_MODAL</find>
       <find>this.props.statsControl</find>
       <find>this.props.modalState.statsModal</find>
@@ -174,6 +175,9 @@
       <find>.</find>
       <find>&lt;div&gt;</find>
       <find>&lt;/div&gt;</find>
+      <find>&quot;browser_action&quot;: {</find>
+      <find>Live gam</find>
+      <find>&quot;</find>
     </findStrings>
     <replaceStrings>
       <replace>selectedTeam</replace>
@@ -192,9 +196,9 @@
       <dir>$PROJECT_DIR$/src</dir>
       <dir>$PROJECT_DIR$/</dir>
       <dir>$PROJECT_DIR$</dir>
-      <dir>$PROJECT_DIR$/client/src</dir>
       <dir>$PROJECT_DIR$/server</dir>
       <dir>$PROJECT_DIR$/client</dir>
+      <dir>$PROJECT_DIR$/client/src</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -203,13 +207,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/client/src/components/Modal/StatsModal/StatsModal.js" />
-        <option value="$PROJECT_DIR$/client/src/components/TeamLineup/BottomTeamLineup.js" />
-        <option value="$PROJECT_DIR$/client/src/components/TeamLineup/TeamLineup.scss" />
-        <option value="$PROJECT_DIR$/client/src/components/TeamLineup/TeamLineup.js" />
-        <option value="$PROJECT_DIR$/client/src/components/Timeline/Timeline.scss" />
-        <option value="$PROJECT_DIR$/client/src/components/MatchStats/MatchStats.js" />
-        <option value="$PROJECT_DIR$/client/src/components/Timeline/Event/EVENTS_TYPES.js" />
         <option value="$PROJECT_DIR$/client/src/components/Timeline/Event/Event.js" />
         <option value="$PROJECT_DIR$/client/src/components/Timeline/Event/Event.scss" />
         <option value="$PROJECT_DIR$/client/src/components/Timeline/Timeline.js" />
@@ -254,6 +251,13 @@
         <option value="$PROJECT_DIR$/client/src/components/Modal/PlayerModal/PlayerModal.scss" />
         <option value="$PROJECT_DIR$/client/src/components/Modal/PlayerModal/PlayerHistoryStats/PlayerHistoryStats.scss" />
         <option value="$PROJECT_DIR$/client/src/components/Modal/PlayerModal/PlayerHistoryStats/PlayerHistoryStats.js" />
+        <option value="$PROJECT_DIR$/client/public/content.js" />
+        <option value="$PROJECT_DIR$/client/build/manifest.json" />
+        <option value="$PROJECT_DIR$/client/build/static/js/main.js" />
+        <option value="$PROJECT_DIR$/client/build/static/css/main.css" />
+        <option value="$PROJECT_DIR$/client/build/content.js" />
+        <option value="$PROJECT_DIR$/client/public/manifest.json" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -281,7 +285,7 @@
       <path value="$PROJECT_DIR$/server/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="width" value="1440" />
     <option name="height" value="843" />
   </component>
@@ -336,47 +340,7 @@
             <path>
               <item name="chrome-sport-ext" type="b2602c69:ProjectViewProjectNode" />
               <item name="chrome-sport-ext" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chrome-sport-ext" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chrome-sport-ext" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chrome-sport-ext" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chrome-sport-ext" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chrome-sport-ext" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chrome-sport-ext" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Modal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chrome-sport-ext" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chrome-sport-ext" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Modal" type="462c0819:PsiDirectoryNode" />
-              <item name="PlayerModal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chrome-sport-ext" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chrome-sport-ext" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Modal" type="462c0819:PsiDirectoryNode" />
-              <item name="PlayerModal" type="462c0819:PsiDirectoryNode" />
-              <item name="PlayerHistoryStats" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -387,7 +351,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="Pla&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/containers/Player/Player.js&#10;PlayerM&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/components/Modal/PlayerModal/PlayerModal.js&#10;app.&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/server/app.js&#10;Fra&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/containers/Frame/Frame.js&#10;index&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/index.js&#10;Matc&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/components/LiveScoresBox/MatchRow/MatchRow.js&#10;Frame&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/containers/Frame/Frame.js&#10;app&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/server/app.js&#10;confi&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/server/env/Config.js&#10;app.js&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/server/app.js&#10;package&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/package.json&#10;Side&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/components/SideButton/SideButton.js&#10;pl&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/components/Modal/PlayerModal/PlayerModal.js&#10;statsM&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/containers/StatsModal/StatsModal.js&#10;Modal&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/components/Modal/Modal.js&#10;live&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/components/LiveScoresBox/LiveScoresBox.js&#10;inde&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/index.js&#10;sid&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/components/SideButton/SideButton.js&#10;pla&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/components/Modal/PlayerModal/PlayerStatBox/PlayerStatBox.js&#10;red&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/store/reducer.js&#10;Pl&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/components/Modal/PlayerModal/PlayerModal.js&#10;st&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/containers/StatsModal/StatsModal.js&#10;styl&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/styles/styles.scss&#10;sty&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/styles/styles.scss&#10;var&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/styles/variables.scss&#10;side&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/components/SideButton/SideButton.js&#10;Team&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/components/SideButton/TeamButton/TeamButton.js&#10;package.&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/node_modules/@fortawesome/fontawesome-free/package.json&#10;lis&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/components/LiveScoresBox/LiveScoresBox.js&#10;redu&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/store/reducers/reducer.js&#10;sta&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/containers/StatsModal/StatsModal.js&#10;stat&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/containers/StatsModal/StatsModal.js&#10;Sta&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/containers/StatsModal/StatsModal.js&#10;ךשטקר&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/containers/Player/Player.js&#10;Mo&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/components/Modal/Modal.js&#10;ma&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/server/data/matches/live_matches.json&#10;Live&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/components/LiveScoresBox/LiveScoresBox.js&#10;reduc&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/store/reducers/reducer.js&#10;modal&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/components/Modal/Modal.js&#10;Fram&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/containers/Frame/Frame.js&#10;data&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/server/utils/DataReadingHandler.js&#10;F&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/containers/Frame/Frame.js&#10;li&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/components/LiveScoresBox/LiveScoresBox.js&#10;Co&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/server/env/Config.js&#10;S&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/components/SideButton/SideButton.js&#10;si&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/components/SideButton/SideButton.js&#10;giti&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/.gitignore&#10;LiveB&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/components/LiveScoresBox/LiveScoresBox.js&#10;man&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/public/manifest.json&#10;s&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/src/components/SideButton/SideButton.js" />
+    <property name="SearchEverywhereHistoryKey" value="ma&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/public/manifest.json&#10;man&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/public/manifest.json&#10;mani&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/build/manifest.json&#10;Pla&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/containers/Player/Player.js&#10;PlayerM&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/components/Modal/PlayerModal/PlayerModal.js&#10;app.&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/server/app.js&#10;Fra&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/containers/Frame/Frame.js&#10;index&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/index.js&#10;Matc&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/components/LiveScoresBox/MatchRow/MatchRow.js&#10;Frame&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/containers/Frame/Frame.js&#10;app&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/server/app.js&#10;confi&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/server/env/Config.js&#10;app.js&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/server/app.js&#10;package&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/package.json&#10;Side&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/components/SideButton/SideButton.js&#10;pl&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/components/Modal/PlayerModal/PlayerModal.js&#10;statsM&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/containers/StatsModal/StatsModal.js&#10;Modal&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/components/Modal/Modal.js&#10;live&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/components/LiveScoresBox/LiveScoresBox.js&#10;inde&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/index.js&#10;sid&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/components/SideButton/SideButton.js&#10;pla&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/components/Modal/PlayerModal/PlayerStatBox/PlayerStatBox.js&#10;red&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/store/reducer.js&#10;Pl&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/components/Modal/PlayerModal/PlayerModal.js&#10;st&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/containers/StatsModal/StatsModal.js&#10;styl&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/styles/styles.scss&#10;sty&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/styles/styles.scss&#10;var&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/styles/variables.scss&#10;side&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/components/SideButton/SideButton.js&#10;Team&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/components/SideButton/TeamButton/TeamButton.js&#10;package.&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/node_modules/@fortawesome/fontawesome-free/package.json&#10;lis&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/components/LiveScoresBox/LiveScoresBox.js&#10;redu&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/store/reducers/reducer.js&#10;sta&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/containers/StatsModal/StatsModal.js&#10;stat&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/containers/StatsModal/StatsModal.js&#10;Sta&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/containers/StatsModal/StatsModal.js&#10;ךשטקר&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/containers/Player/Player.js&#10;Mo&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/components/Modal/Modal.js&#10;Live&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/components/LiveScoresBox/LiveScoresBox.js&#10;reduc&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/store/reducers/reducer.js&#10;modal&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/components/Modal/Modal.js&#10;Fram&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/containers/Frame/Frame.js&#10;data&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/server/utils/DataReadingHandler.js&#10;F&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/containers/Frame/Frame.js&#10;li&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/components/LiveScoresBox/LiveScoresBox.js&#10;Co&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/server/env/Config.js&#10;S&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/components/SideButton/SideButton.js&#10;si&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/src/components/SideButton/SideButton.js&#10;giti&#9;FILE&#9;file:///Users/matanroashe/Development/chrome-sport-ext/client/.gitignore" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
@@ -461,23 +425,25 @@
       <workItem from="1563795906531" duration="84642000" />
       <workItem from="1564386805226" duration="8059000" />
       <workItem from="1564400598073" duration="19631000" />
-      <workItem from="1564498710766" duration="23063000" />
+      <workItem from="1564498710766" duration="24669000" />
+      <workItem from="1564586163254" duration="3958000" />
+      <workItem from="1564661145254" duration="439000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="276229000" />
+    <option name="totallyTimeSpent" value="282232000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="843" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49891067" visible="true" weight="0.20436928" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49891067" visible="true" weight="0.20436928" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" sideWeight="0.50108933" side_tool="true" weight="0.15785764" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3288948" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32692307" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3288948" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -486,7 +452,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32756326" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5003524" side_tool="true" weight="0.3695055" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49964765" visible="true" weight="0.3648469" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49964765" visible="true" weight="0.37549934" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -494,12 +460,12 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49891067" weight="0.16138126" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49891067" visible="true" weight="0.20436928" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" sideWeight="0.50108933" side_tool="true" weight="0.15785764" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3288948" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32756326" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3288948" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -508,7 +474,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32756326" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5003524" side_tool="true" weight="0.3695055" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49964765" visible="true" weight="0.49134487" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49964765" visible="true" weight="0.37637362" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -536,66 +502,6 @@
     <option name="LIMIT_HISTORY" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/src/components/Timeline/Timeline.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/assets/images/player_bg.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/MatchStats/StatRow/StatRow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/MatchStats/MatchStats.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="73" column="15" selection-start-line="73" selection-start-column="15" selection-end-line="73" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/Modal/PlayerModal/PlayerStatBox/PlayerStatBox.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="17" selection-start-column="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/Modal/Modal.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@fortawesome/fontawesome-free/package.json" />
-    <entry file="file://$PROJECT_DIR$/client/build/static/css/main.a6cc74b0.chunk.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="51" selection-start-line="1" selection-end-line="1" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/SideButton/SideButton.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/SideButton/TeamButton/TeamButton.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/SideButton/TeamButton/TeamButton.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -648,9 +554,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="36" lean-forward="true" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -666,9 +569,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" selection-start-line="10" selection-end-line="11" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -691,16 +591,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/logs/test.txt" />
     <entry file="file://$PROJECT_DIR$/server/logs/tes1t.txt" />
-    <entry file="file://$PROJECT_DIR$/server/logs/liveMatches_30:07:2019_06:00:52_logs.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/logs/liveMatches_30:07:2019_logs.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/server/logs/liveMatches_30:07:2019_06:00:52_logs.txt" />
+    <entry file="file://$PROJECT_DIR$/server/logs/liveMatches_30:07:2019_logs.txt" />
     <entry file="file://$PROJECT_DIR$/server/data/matches/live_matches.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -743,9 +635,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="68" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="68" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -753,9 +642,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
           <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -763,20 +649,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/containers/Frame/Frame.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="36" selection-end-column="7" />
-          <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-end-line="12" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -784,20 +656,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="70" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/controllers/matchesController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="56" lean-forward="true" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/controllers/playerController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -812,9 +670,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
           <caret line="19" column="37" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -836,9 +691,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="123" column="35" selection-start-line="123" selection-start-column="35" selection-end-line="123" selection-end-column="35" />
-          <folding>
-            <element signature="e#179#1528#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -846,9 +698,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="87">
           <caret line="47" selection-start-line="47" selection-end-line="51" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -879,11 +728,90 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/Modal/PlayerModal/PlayerHistoryStats/PlayerHistoryStats.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        <state relative-caret-position="180">
+          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/containers/Frame/Frame.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
           <folding>
-            <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/public/content.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/build/manifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/build/static/js/2.b6d29576.chunk.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/build/content.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/build/static/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/public/manifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/build/static/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="36" lean-forward="true" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/controllers/playerController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/controllers/teamController.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/utils/DataReadingHandler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="35" lean-forward="true" selection-start-column="35" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/controllers/matchesController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-253">
+          <caret line="19" column="56" lean-forward="true" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
         </state>
       </provider>
     </entry>

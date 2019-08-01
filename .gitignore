@@ -1,4 +1,4 @@
 server/node_modules
 client/node_modules
-server/logs/general_logs.log
-server/logs/morgan_logs.log
+server/logs/
+server/logs/
